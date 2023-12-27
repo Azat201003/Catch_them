@@ -1,22 +1,33 @@
 ﻿#include <SFML/Graphics.hpp>
+#include "Player.h"
+#include "Draw.h"
+#include "setting.h"
 
+using namespace sf;
+using namespace setting;
+using namespace instruments;
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    RenderWindow window(VideoMode(WIDTH, HEIGHT), "Catch them!");
+    RectangleShape playerShape(Vector2f(PLAYER_WIDTH, PLAYER_HEIGHT));
+    Player player(FIRST_PLAYER_POS);
+    Draw draw;
+    Clock clock;
+    playerShape.setFillColor(Color::Red);
 
+    float lastTime = clock.getElapsedTime().asSeconds();
     while (window.isOpen())
     {
         sf::Event event;
         while (window.pollEvent(event))
         {
-            if (event.type == sf::Event::Closed)
+            if (event.type == Event::Closed)
                 window.close();
         }
 
+        player.move(&lastTime);
         window.clear();
-        window.draw(shape);
+        draw.drawPlayer(player, &window, &playerShape);
         window.display();
     }
 
