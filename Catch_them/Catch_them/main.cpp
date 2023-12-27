@@ -8,12 +8,21 @@ using namespace setting;
 using namespace instruments;
 int main()
 {
+    // loading
+    Image icon;
+    Texture playerTexture;
+    icon.loadFromFile("textures/icon.png");
+    playerTexture.loadFromFile("textures/box.png");
+
+
+
     RenderWindow window(VideoMode(WIDTH, HEIGHT), "Catch them!");
-    RectangleShape playerShape(Vector2f(PLAYER_WIDTH, PLAYER_HEIGHT));
-    Player player(FIRST_PLAYER_POS);
+    Sprite playerSprite(playerTexture);
+    Player player(FIRST_PLAYER_POS, playerSprite);
     Draw draw;
     Clock clock;
-    playerShape.setFillColor(Color::Red);
+
+    window.setIcon(128, 128, icon.getPixelsPtr());
 
     float lastTime = clock.getElapsedTime().asSeconds();
     while (window.isOpen())
@@ -27,7 +36,7 @@ int main()
 
         player.move(&lastTime);
         window.clear();
-        draw.drawPlayer(player, &window, &playerShape);
+        draw.drawPlayer(player, &window);
         window.display();
     }
 

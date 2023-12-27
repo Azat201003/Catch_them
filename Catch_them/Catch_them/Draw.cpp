@@ -2,7 +2,6 @@
 #include <SFML/Graphics.hpp>
 
 using namespace sf;
-void Draw::drawPlayer(Player player, RenderWindow* window, Shape* playerShape) {
-	playerShape->setPosition(player.getPos().x, player.getPos().y);
-	window->draw(*playerShape);
+void Draw::drawPlayer(Player player, RenderWindow* window) {
+	window->draw(player.getSprite());
 }

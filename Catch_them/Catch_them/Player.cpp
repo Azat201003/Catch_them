@@ -1,6 +1,6 @@
 #include "Player.h"
-#include <SFML/Graphics.hpp>
 #include "setting.h"
+#include <SFML/Graphics.hpp>
 #include <iostream>
 
 using namespace setting;
@@ -20,12 +20,17 @@ void Player::move(float* lastTime) {
 		Keyboard::isKeyPressed(Keyboard::Right)) {
 		pos.x += SPEED * passed;
 	}
+	sprite.setPosition(pos.x, pos.y);
 }
 
 Pos Player::getPos() {
 	return pos;
 }
+Sprite Player::getSprite() {
+	return sprite;
+}
 
-Player::Player(Pos aPos) {
+Player::Player(Pos aPos, Sprite aSprite) {
 	pos = aPos;
+	sprite = aSprite;
 }

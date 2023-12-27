@@ -15,8 +15,8 @@ namespace instruments {
 namespace setting {
 	static int WIDTH			= 640;
 	static int HEIGHT			= 480;
-	static int PLAYER_WIDTH		= 50;
-	static int PLAYER_HEIGHT	= 50;
-	static float SPEED			= 20;
+	static int PLAYER_WIDTH		= 82;
+	static int PLAYER_HEIGHT	= 113;
+	static float SPEED			= 8;
 	static instruments::Pos FIRST_PLAYER_POS(WIDTH / 2 - PLAYER_WIDTH / 2, HEIGHT - PLAYER_HEIGHT);
 }

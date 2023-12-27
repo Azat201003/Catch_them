@@ -6,6 +6,6 @@ using namespace sf;
 class Draw
 {
 public:
-	void drawPlayer(Player player, RenderWindow* window, Shape* playerShape);
+	void drawPlayer(Player player, RenderWindow* window);
 };
 
