@@ -7,7 +7,7 @@ using namespace sf;
 class Player
 {
 public:
-	void move(float* lastTime);
+	void move();
 	Pos getPos();
 	Sprite getSprite();
 	Player(Pos aPos, Sprite aSprite);

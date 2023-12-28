@@ -9,10 +9,16 @@ using namespace instruments;
 int main()
 {
     // loading
-    Image icon;
     Texture playerTexture;
+    Texture textureObject1;
+    Image icon;
+
+
     icon.loadFromFile("textures/icon.png");
-    playerTexture.loadFromFile("textures/box.png");
+
+
+    playerTexture.loadFromFile("res/textures/box.png");
+    textureObject1.loadFromFile("res/textures/sweet.png");
 
 
 
@@ -20,11 +26,9 @@ int main()
     Sprite playerSprite(playerTexture);
     Player player(FIRST_PLAYER_POS, playerSprite);
     Draw draw;
-    Clock clock;
 
     window.setIcon(128, 128, icon.getPixelsPtr());
 
-    float lastTime = clock.getElapsedTime().asSeconds();
     while (window.isOpen())
     {
         sf::Event event;
@@ -34,7 +38,7 @@ int main()
                 window.close();
         }
 
-        player.move(&lastTime);
+        player.move();
         window.clear();
         draw.drawPlayer(player, &window);
         window.display();
