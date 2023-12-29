@@ -1,15 +1,24 @@
 ﻿  Draw.cpp
-C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(22,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(22,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-  main.cpp
-C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(22,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(22,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(23,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(23,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
   Object.cpp
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(23,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(23,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
   ObjectsRain.cpp
-C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(22,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(22,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(23,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(23,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(7,23): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(8,61): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(16,25): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(17,65): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(22,23): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(24,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(25,64): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
   Player.cpp
-C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(22,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(22,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(23,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(23,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  main.cpp
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(23,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(23,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
   Создание кода...
   Catch_them.vcxproj -> C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\x64\Debug\Catch_them.exe
