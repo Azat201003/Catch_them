@@ -9,6 +9,7 @@ using namespace sf;
 Player::Player(Pos aPos, Sprite aSprite) {
 	pos = aPos;
 	sprite = aSprite;
+	coins = 0;
 }
 void Player::move() {
 	if (Keyboard::isKeyPressed(Keyboard::A) ||

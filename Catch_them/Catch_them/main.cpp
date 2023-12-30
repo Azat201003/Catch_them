@@ -12,6 +12,7 @@ int main()
     // loading
     Texture playerTexture;
     Texture textureObject1;
+    Texture backgroundTexture;
     Image icon;
 
 
@@ -20,6 +21,7 @@ int main()
 
     playerTexture.loadFromFile("res/textures/box.png");
     textureObject1.loadFromFile("res/textures/sweet.png");
+    backgroundTexture.loadFromFile("res/textures/background.png");
 
 
     Sprite playerSprite(playerTexture);
@@ -46,6 +48,7 @@ int main()
         player.move();
         OR.update(&player);
         window.clear();
+        draw.drawBackground(backgroundTexture, &window);
         draw.drawObjects(OR.getObjects(), &window);
         draw.drawPlayer(player, &window);
         window.display();
