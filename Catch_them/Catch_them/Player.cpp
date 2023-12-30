@@ -5,14 +5,19 @@
 
 using namespace setting;
 using namespace sf;
+
+Player::Player(Pos aPos, Sprite aSprite) {
+	pos = aPos;
+	sprite = aSprite;
+}
 void Player::move() {
 	if (Keyboard::isKeyPressed(Keyboard::A) ||
 		Keyboard::isKeyPressed(Keyboard::Left)) {
-		pos.x -= SPEED;
+		pos.x -= SPEED_PLAYER;
 	} 
 	if (Keyboard::isKeyPressed(Keyboard::D) ||
 		Keyboard::isKeyPressed(Keyboard::Right)) {
-		pos.x += SPEED;
+		pos.x += SPEED_PLAYER;
 	}
 	sprite.setPosition(pos.x, pos.y);
 }
@@ -24,7 +29,9 @@ Sprite Player::getSprite() {
 	return sprite;
 }
 
-Player::Player(Pos aPos, Sprite aSprite) {
-	pos = aPos;
-	sprite = aSprite;
+void Player::addCoins(int num) {
+	coins += num;
+}
+int Player::getCoins() {
+	return coins;
 }

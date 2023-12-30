@@ -44,10 +44,10 @@ int main()
         }
 
         player.move();
-        OR.update();
+        OR.update(&player);
         window.clear();
-        draw.drawPlayer(player, &window);
         draw.drawObjects(OR.getObjects(), &window);
+        draw.drawPlayer(player, &window);
         window.display();
     }
 

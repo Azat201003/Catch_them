@@ -1,7 +1,8 @@
 #pragma once
-#include <vector>
 #include "Object.h"
 #include "setting.h"
+#include "player.h"
+#include <vector>
 #include <chrono>
 
 using namespace setting;
@@ -10,10 +11,11 @@ class ObjectsRain
 {
 public:
 	ObjectsRain(vector<Sprite> aTextures);
-	void update();
+	vector<Object> getObjects();
+	void update(Player *player);
 	void spawnLine();
 	void addObject();
-	vector<Object> getObjects();
+	void isCollisionPlayer(int indexObject, Player *player);
 private:
 	vector<Object> objects;
 	vector<Sprite> sprites;

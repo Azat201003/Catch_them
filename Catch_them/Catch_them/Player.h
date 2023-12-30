@@ -7,12 +7,15 @@ using namespace sf;
 class Player
 {
 public:
+	Player(Pos aPos, Sprite aSprite);
 	void move();
 	Pos getPos();
 	Sprite getSprite();
-	Player(Pos aPos, Sprite aSprite);
+	void addCoins(int num);
+	int getCoins();
 private:
 	Pos pos;
 	Sprite sprite;
+	int coins;
 };
 
