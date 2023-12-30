@@ -13,7 +13,7 @@ public:
 	ObjectsRain(vector<Sprite> aTextures);
 	vector<Object> getObjects();
 	void update(Player *player);
-	void spawnLine();
+	void spawnLine(int i);
 	void addObject();
 	void isCollisionPlayer(int indexObject, Player *player);
 private:

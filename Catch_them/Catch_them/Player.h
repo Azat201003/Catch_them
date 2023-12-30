@@ -13,9 +13,11 @@ public:
 	Sprite getSprite();
 	void addCoins(int num);
 	int getCoins();
+	void kick(int damage);
 private:
 	Pos pos;
 	Sprite sprite;
 	int coins;
+	int hp = 10;
 };
 

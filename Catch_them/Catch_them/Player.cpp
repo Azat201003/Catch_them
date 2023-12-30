@@ -36,3 +36,10 @@ void Player::addCoins(int num) {
 int Player::getCoins() {
 	return coins;
 }
+
+void Player::kick(int damage) {
+	hp -= damage;
+	if (hp <= 0) {
+		// game over
+	}
+}

@@ -26,7 +26,7 @@ namespace setting {
 	static int HEIGHT				= 480;
 	static int PLAYER_WIDTH			= 82;
 	static int PLAYER_HEIGHT		= 113;
-	static int MAX_NUM_OF_PRICES	= 5;
+	static int MAX_NUM_OF_PRICES	= 4;
 	static int SPAWN_LINE			= HEIGHT - 250;
 	static float SPEED_FALLING		= 2;
 	static float SPEED_PLAYER		= 5;
