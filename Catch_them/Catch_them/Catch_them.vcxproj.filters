@@ -42,6 +42,7 @@
     <None Include="sfml-system-d-2.dll" />
     <None Include="sfml-window-2.dll" />
     <None Include="sfml-window-d-2.dll" />
+    <None Include="openal32.dll" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h">

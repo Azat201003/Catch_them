@@ -1,9 +1,13 @@
-﻿  main.cpp
-C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(23,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
-C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(23,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+﻿  ObjectsRain.cpp
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(30,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(30,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(28,23): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(35,26): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(36,52): warning C4244: аргумент: преобразование "unsigned __int64" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(37,21): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
   Создание кода
-  1 of 85 functions ( 1.2%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  18 of 237 functions ( 7.6%) were compiled, the rest were copied from previous compilation.
+    14 functions were new in current compilation
+    12 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
   Catch_them.vcxproj -> C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\x64\Release\Catch_them.exe

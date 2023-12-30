@@ -2,6 +2,7 @@
 #include "Player.h"
 #include "Draw.h"
 #include "setting.h"
+#include "ObjectsRain.h"
 
 using namespace sf;
 using namespace setting;
@@ -14,18 +15,22 @@ int main()
     Image icon;
 
 
-    icon.loadFromFile("textures/icon.png");
+    icon.loadFromFile("res/textures/icon.png");
 
 
     playerTexture.loadFromFile("res/textures/box.png");
     textureObject1.loadFromFile("res/textures/sweet.png");
 
 
+    Sprite playerSprite(playerTexture);
+
+    Sprite spriteObject1(textureObject1);
+
 
     RenderWindow window(VideoMode(WIDTH, HEIGHT), "Catch them!");
-    Sprite playerSprite(playerTexture);
     Player player(FIRST_PLAYER_POS, playerSprite);
     Draw draw;
+    ObjectsRain OR({spriteObject1});
 
     window.setIcon(128, 128, icon.getPixelsPtr());
 
@@ -39,8 +44,10 @@ int main()
         }
 
         player.move();
+        OR.update();
         window.clear();
         draw.drawPlayer(player, &window);
+        draw.drawObjects(OR.getObjects(), &window);
         window.display();
     }
 

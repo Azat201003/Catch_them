@@ -9,10 +9,13 @@ using namespace std;
 class ObjectsRain
 {
 public:
-	ObjectsRain(vector<Texture> aTextures);
+	ObjectsRain(vector<Sprite> aTextures);
 	void update();
+	void spawnLine();
+	void addObject();
+	vector<Object> getObjects();
 private:
 	vector<Object> objects;
-	vector<Texture> textures;
+	vector<Sprite> sprites;
 };
 

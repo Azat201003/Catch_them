@@ -7,13 +7,12 @@ using namespace instruments;
 class Object
 {
 public:
-	Object(Texture aTexture, int aSpeed, Pos aPos);
-	Texture getTexture();
-	Pos getPos();
+	Object(Sprite aSprite, int aSpeed, Pos aPos);
+	Sprite getSprite();
 	int getSpeed();
+	void move(int y);
 private:
-	Texture texture;
-	Pos pos;
+	Sprite sprite;
 	int speed;
 };
 
