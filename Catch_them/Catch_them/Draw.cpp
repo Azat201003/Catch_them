@@ -23,3 +23,7 @@ void Draw::drawBackground(Texture background, RenderWindow* window) {
 	sprite.setTexture(background);
 	window->draw(sprite);
 }
+
+void Draw::drawMenu(vector<Texture> menuObjects, RenderWindow* window) {
+	
+}

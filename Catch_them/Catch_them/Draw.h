@@ -12,5 +12,6 @@ public:
 	void drawPlayer(Player player, sf::RenderWindow* window);
 	void drawObjects(vector<Object> objects, sf::RenderWindow* window);
 	void drawBackground(Texture background, sf::RenderWindow* window);
+	void drawMenu(vector<Texture> menuObjects, sf::RenderWindow* window);
 };
 

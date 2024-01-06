@@ -3,6 +3,7 @@
 #include "Draw.h"
 #include "setting.h"
 #include "ObjectsRain.h"
+#include "menuItem.h"
 
 using namespace sf;
 using namespace setting;
@@ -28,6 +29,8 @@ int main()
 
     Sprite spriteObject1(textureObject1);
 
+
+    Button button;
 
     RenderWindow window(VideoMode(WIDTH, HEIGHT), "Catch them!");
     Player player(FIRST_PLAYER_POS, playerSprite);
