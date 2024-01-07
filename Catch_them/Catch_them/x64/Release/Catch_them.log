@@ -1,7 +1,23 @@
-﻿  MenuItem.cpp
-  Создание кода
-  0 of 270 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
-  Создание кода завершено
-  Catch_them.vcxproj -> C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\x64\Release\Catch_them.exe
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1096,5): error MSB6006: "link.exe" завершилась с кодом 1120.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Init_FreeType.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Done_FreeType.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_New_Face.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_New_Memory_Face.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Open_Face.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Done_Face.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Set_Pixel_Sizes.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Load_Char.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Get_Kerning.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Select_Charmap.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Get_Char_Index.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_MulFix.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Get_Glyph.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Glyph_To_Bitmap.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Done_Glyph.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Outline_Embolden.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Bitmap_Embolden.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Stroker_New.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Stroker_Set.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Stroker_Done.
+sfml-graphics-s.lib(Font.obj) : error LNK2001: неразрешенный внешний символ FT_Glyph_Stroke.
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\x64\Release\Catch_them.exe : fatal error LNK1120: неразрешенных внешних элементов: 21

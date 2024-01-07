@@ -41,16 +41,18 @@ int main()
     Sprite spriteObject1(textureObject1);
 
     buttonText.setString("start");
-    Button button1(buttonBackgtoundTexture, buttonText);
+    Button button1(buttonBackgtoundTexture, buttonText, Pos(52, 39));
     buttonText.setString("setting");
-    Button button2(buttonBackgtoundTexture, buttonText);
+    Button button2(buttonBackgtoundTexture, buttonText, Pos(52, 183));
     buttonText.setString("quit");
-    Button button3(buttonBackgtoundTexture, buttonText);
+    Button button3(buttonBackgtoundTexture, buttonText, Pos(52, 327));
 
     RenderWindow window(VideoMode(WIDTH, HEIGHT), "Catch them!");
     Player player(FIRST_PLAYER_POS, playerSprite);
     Draw draw;
     ObjectsRain OR({spriteObject1});
+
+    //vector<MenuItem> menuItems{ button1, button2, button3 };
 
     window.setIcon(128, 128, icon.getPixelsPtr());
 
@@ -69,6 +71,7 @@ int main()
         draw.drawBackground(backgroundTexture, &window);
         draw.drawObjects(OR.getObjects(), &window);
         draw.drawPlayer(player, &window);
+        button1.draw(&window);
         window.display();
     }
 

@@ -121,6 +121,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\Users\Azat\Documents\libraries\SFML-2.6.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -128,7 +129,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Users\Azat\Documents\libraries\SFML-2.6.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-audio.lib;sfml-network.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;sfml-audio-s.lib;sfml-network-s.lib;opengl32.lib;winmm.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
@@ -140,19 +141,6 @@
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="ObjectsRain.cpp" />
     <ClCompile Include="Player.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="openal32.dll" />
-    <None Include="sfml-audio-2.dll" />
-    <None Include="sfml-audio-d-2.dll" />
-    <None Include="sfml-graphics-2.dll" />
-    <None Include="sfml-graphics-d-2.dll" />
-    <None Include="sfml-network-2.dll" />
-    <None Include="sfml-network-d-2.dll" />
-    <None Include="sfml-system-2.dll" />
-    <None Include="sfml-system-d-2.dll" />
-    <None Include="sfml-window-2.dll" />
-    <None Include="sfml-window-d-2.dll" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Collision.h" />
