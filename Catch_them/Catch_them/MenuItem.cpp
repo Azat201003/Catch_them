@@ -5,6 +5,14 @@ Button::Button(sf::Texture aTexture, sf::Text aText) {
 	text	= aText   ;
 }
 
-void Button::onClick(void (*foo)()) {
-	foo();
+void Button::onClick(void (*aFoo)()) {
+	foo = aFoo;
+}
+
+void Button::update() {
+	// òþ òþ
+}
+
+void Button::draw(sf::RenderWindow *window) {
+
 }

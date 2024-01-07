@@ -14,7 +14,11 @@ int main()
     Texture playerTexture;
     Texture textureObject1;
     Texture backgroundTexture;
+    Texture buttonBackgtoundTexture;
+
     Image icon;
+
+    Font fontButtons;
 
 
     icon.loadFromFile("res/textures/icon.png");
@@ -23,14 +27,25 @@ int main()
     playerTexture.loadFromFile("res/textures/box.png");
     textureObject1.loadFromFile("res/textures/sweet.png");
     backgroundTexture.loadFromFile("res/textures/background.png");
+    buttonBackgtoundTexture.loadFromFile("res/textures/buttonBackground.png");
 
+    fontButtons.loadFromFile("res/fonts/Inter-SemiBold.ttf");
+
+    Text buttonText;
+
+    buttonText.setFont(fontButtons);
+    buttonText.setCharacterSize(50);
 
     Sprite playerSprite(playerTexture);
 
     Sprite spriteObject1(textureObject1);
 
-
-    Button button;
+    buttonText.setString("start");
+    Button button1(buttonBackgtoundTexture, buttonText);
+    buttonText.setString("setting");
+    Button button2(buttonBackgtoundTexture, buttonText);
+    buttonText.setString("quit");
+    Button button3(buttonBackgtoundTexture, buttonText);
 
     RenderWindow window(VideoMode(WIDTH, HEIGHT), "Catch them!");
     Player player(FIRST_PLAYER_POS, playerSprite);

@@ -24,6 +24,6 @@ void Draw::drawBackground(Texture background, RenderWindow* window) {
 	window->draw(sprite);
 }
 
-void Draw::drawMenu(vector<Texture> menuObjects, RenderWindow* window) {
+void Draw::drawMenu(vector<MenuItem> menuObjects, RenderWindow* window) {
 	
 }
