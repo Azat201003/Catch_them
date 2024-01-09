@@ -2,22 +2,20 @@
 #include "setting.h"
 #include <SFML/Graphics.hpp>
 
-using namespace instruments;
-using namespace sf;
 class Player
 {
 public:
-	Player(Pos aPos, Sprite aSprite);
+	Player(instruments::Pos aPos, sf::Sprite aSprite);
 	void move();
-	Pos getPos();
-	Sprite getSprite();
+	instruments::Pos getPos();
+	sf::Sprite getSprite();
 	void addCoins(int num);
 	int getCoins();
 	void kick(int damage);
 private:
-	Pos pos;
-	Sprite sprite;
+	instruments::Pos pos;
+	sf::Sprite sprite;
 	int coins;
-	int hp = 10;
+	int hp = setting::HP;
 };
 

@@ -5,14 +5,12 @@
 #include "Object.h"
 #include "MenuItem.h"
 
-using namespace sf;
-using namespace std;
 class Draw
 {
 public:
 	void drawPlayer(Player player, sf::RenderWindow* window);
-	void drawObjects(vector<Object> objects, sf::RenderWindow* window);
-	void drawBackground(Texture background, sf::RenderWindow* window);
-	void drawMenu(vector<MenuItem> *menuObjects, sf::RenderWindow* window);
+	void drawObjects(std::vector<Object> objects, sf::RenderWindow* window);
+	void drawBackground(sf::Texture background, sf::RenderWindow* window);
+	void drawMenu(std::vector<MenuItem> *menuObjects, sf::RenderWindow* window);
 };
 

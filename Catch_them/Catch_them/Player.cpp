@@ -6,7 +6,7 @@
 using namespace setting;
 using namespace sf;
 
-Player::Player(Pos aPos, Sprite aSprite) {
+Player::Player(instruments::Pos aPos, Sprite aSprite) {
 	pos = aPos;
 	sprite = aSprite;
 	coins = 0;
@@ -23,7 +23,7 @@ void Player::move() {
 	sprite.setPosition(pos.x, pos.y);
 }
 
-Pos Player::getPos() {
+instruments::Pos Player::getPos() {
 	return pos;
 }
 Sprite Player::getSprite() {

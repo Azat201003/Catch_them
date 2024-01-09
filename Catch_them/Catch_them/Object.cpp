@@ -1,12 +1,12 @@
 #include "Object.h"
 
-Object::Object(Sprite aSprite, float aSpeed, Pos aPos) {
+Object::Object(sf::Sprite aSprite, float aSpeed, instruments::Pos aPos) {
 	sprite = aSprite;
 	speed = aSpeed;
 	sprite.setPosition(aPos.x, aPos.y);
 }
 
-Sprite Object::getSprite() {
+sf::Sprite Object::getSprite() {
 	return sprite;
 }
 

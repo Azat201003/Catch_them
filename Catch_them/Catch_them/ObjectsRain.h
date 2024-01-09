@@ -5,19 +5,17 @@
 #include <vector>
 #include <chrono>
 
-using namespace setting;
-using namespace std;
 class ObjectsRain
 {
 public:
-	ObjectsRain(vector<Sprite> aTextures);
-	vector<Object> getObjects();
+	ObjectsRain(std::vector<sf::Sprite> aTextures);
+	std::vector<Object> getObjects();
 	void update(Player *player);
 	void spawnLine(int i);
 	void addObject();
 	void isCollisionPlayer(int indexObject, Player *player);
 private:
-	vector<Object> objects;
-	vector<Sprite> sprites;
+	std::vector<Object> objects;
+	std::vector<sf::Sprite> sprites;
 };
 

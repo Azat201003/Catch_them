@@ -1,25 +1,23 @@
 #include "Draw.h"
 #include <SFML/Graphics.hpp>
 
-using namespace sf;
-using namespace setting;
-void Draw::drawPlayer(Player player, RenderWindow* window) {
+void Draw::drawPlayer(Player player, sf::RenderWindow* window) {
 	window->draw(player.getSprite());
-	Font font;
+	sf::Font font;
 	font.loadFromFile("res/fonts/Robotocondensed.ttf");
-	Text text(to_string(player.getCoins()), font, 20);
-	text.setPosition(WIDTH - LEN_COINS, 0);
+	sf::Text text(std::to_string(player.getCoins()), font, 20);
+	text.setPosition(setting::WIDTH - setting::LEN_COINS, 0);
 	window->draw(text);
 }
 
-void Draw::drawObjects(vector<Object> objects, RenderWindow* window) {
+void Draw::drawObjects(std::vector<Object> objects, sf::RenderWindow* window) {
 	for (int i = 0; i < objects.size(); i++) {
 		window->draw(objects.at(i).getSprite());
 	}
 }
 
-void Draw::drawBackground(Texture background, RenderWindow* window) {
-	Sprite sprite;
+void Draw::drawBackground(sf::Texture background, sf::RenderWindow* window) {
+	sf::Sprite sprite;
 	sprite.setTexture(background);
 	window->draw(sprite);
 }

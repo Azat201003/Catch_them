@@ -5,20 +5,17 @@
 #include "ObjectsRain.h"
 #include "menuItem.h"
 
-using namespace sf;
-using namespace setting;
-using namespace instruments;
 int main()
 {
     // loading
-    Texture playerTexture;
-    Texture textureObject1;
-    Texture backgroundTexture;
-    Texture buttonBackgtoundTexture;
+    sf::Texture playerTexture;
+    sf::Texture textureObject1;
+    sf::Texture backgroundTexture;
+    sf::Texture buttonBackgtoundTexture;
 
-    Image icon;
+    sf::Image icon;
 
-    Font fontButtons;
+    sf::Font fontButtons;
 
 
     icon.loadFromFile("res/textures/icon.png");
@@ -31,24 +28,24 @@ int main()
 
     fontButtons.loadFromFile("res/fonts/Inter-SemiBold.ttf");
 
-    Text buttonText;
+    sf::Text buttonText;
 
     buttonText.setFont(fontButtons);
     buttonText.setCharacterSize(50);
 
-    Sprite playerSprite(playerTexture);
+    sf::Sprite playerSprite(playerTexture);
 
-    Sprite spriteObject1(textureObject1);
+    sf::Sprite spriteObject1(textureObject1);
 
     buttonText.setString("start");
-    Button button1(buttonBackgtoundTexture, buttonText, Pos(52, 39));
+    Button button1(buttonBackgtoundTexture, buttonText, instruments::Pos(52, 39));
     buttonText.setString("setting");
-    Button button2(buttonBackgtoundTexture, buttonText, Pos(52, 183));
+    Button button2(buttonBackgtoundTexture, buttonText, instruments::Pos(52, 183));
     buttonText.setString("quit");
-    Button button3(buttonBackgtoundTexture, buttonText, Pos(52, 327));
+    Button button3(buttonBackgtoundTexture, buttonText, instruments::Pos(52, 327));
 
-    RenderWindow window(VideoMode(WIDTH, HEIGHT), "Catch them!");
-    Player player(FIRST_PLAYER_POS, playerSprite);
+    sf::RenderWindow window(sf::VideoMode(setting::WIDTH, setting::HEIGHT), "Catch them!");
+    Player player(setting::FIRST_PLAYER_POS, playerSprite);
     Draw draw;
     ObjectsRain OR({spriteObject1});
 
@@ -61,7 +58,7 @@ int main()
         sf::Event event;
         while (window.pollEvent(event))
         {
-            if (event.type == Event::Closed)
+            if (event.type == sf::Event::Closed)
                 window.close();
         }
 
