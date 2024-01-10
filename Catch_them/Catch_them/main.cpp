@@ -5,6 +5,18 @@
 #include "ObjectsRain.h"
 #include "menuItem.h"
 
+void start();
+void quit();
+void openSetting();
+void updateMenuItems(Button* menuObjects[], int size, sf::RenderWindow *window) {
+    for (int i = 0; i < size; i++) {
+        menuObjects[i]->update(window);
+    }
+}
+
+bool isOpenMenu = true;
+sf::RenderWindow window(sf::VideoMode(setting::WIDTH, setting::HEIGHT), "Catch them!");
+
 int main()
 {
     // loading
@@ -30,6 +42,7 @@ int main()
 
     sf::Text buttonText;
 
+    buttonText.setFillColor(sf::Color(135, 195, 143, 255));
     buttonText.setFont(fontButtons);
     buttonText.setCharacterSize(50);
 
@@ -38,18 +51,21 @@ int main()
     sf::Sprite spriteObject1(textureObject1);
 
     buttonText.setString("start");
-    Button button1(buttonBackgtoundTexture, buttonText, instruments::Pos(52, 39));
+    Button button1(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 39), instruments::Pos(262, 65));
     buttonText.setString("setting");
-    Button button2(buttonBackgtoundTexture, buttonText, instruments::Pos(52, 183));
+    Button button2(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 183), instruments::Pos(221, 209));
     buttonText.setString("quit");
-    Button button3(buttonBackgtoundTexture, buttonText, instruments::Pos(52, 327));
+    Button button3(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 327), instruments::Pos(273, 353));
+    button1.onClick(start);
+    button3.onClick(quit);
 
-    sf::RenderWindow window(sf::VideoMode(setting::WIDTH, setting::HEIGHT), "Catch them!");
     Player player(setting::FIRST_PLAYER_POS, playerSprite);
     Draw draw;
     ObjectsRain OR({spriteObject1});
 
-    //vector<MenuItem> menuItems{ button1, button2, button3 };
+    MenuItem* menuItems[] = { &button1, &button2, &button3 };
+    Button* buttonItems[] = { &button1, &button2, &button3 };
+
 
     window.setIcon(128, 128, icon.getPixelsPtr());
 
@@ -65,12 +81,25 @@ int main()
         player.move();
         OR.update(&player);
         window.clear();
+
         draw.drawBackground(backgroundTexture, &window);
         draw.drawObjects(OR.getObjects(), &window);
-        draw.drawPlayer(player, &window);
-        button1.draw(&window);
+        if (isOpenMenu) {
+            draw.drawMenu(menuItems, 3, &window);
+            updateMenuItems(buttonItems, 3, &window);
+        } else {
+            draw.drawPlayer(player, &window);
+        }
         window.display();
     }
 
     return 0;
+}
+
+void start() {
+    isOpenMenu = false;
+}
+
+void quit() {
+    window.close();
 }

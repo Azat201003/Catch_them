@@ -21,3 +21,10 @@ void Draw::drawBackground(sf::Texture background, sf::RenderWindow* window) {
 	sprite.setTexture(background);
 	window->draw(sprite);
 }
+
+void Draw::drawMenu(MenuItem *menuObjects[], int size, sf::RenderWindow* window) {
+	for (int i = 0; i < size; i++) {
+		menuObjects[i]->draw(window);
+	}
+}
+

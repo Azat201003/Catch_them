@@ -9,13 +9,13 @@ public:
 
 class Button : public MenuItem {
 public:
-	Button(sf::Texture aTexture, sf::Text aText, instruments::Pos pos);
+	Button(sf::Texture* aTexture, sf::Text aText, instruments::Pos texturePos, instruments::Pos textPos);
 	void onClick(void (*aFoo)());
-	void update();
+	void update(sf::RenderWindow* window);
 	void draw(sf::RenderWindow* window) override;
 private:
 	sf::Sprite	sprite	;
 	sf::Text	text	;
-	void (*foo) ();
+	void (*onclick) ()		;
 };
 
