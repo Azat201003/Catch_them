@@ -1,4 +1,5 @@
 #include "Collision.h"
+#include "cstdlib"
 
 
 Collision::Collision(instruments::Pos aPos, instruments::Pos aSize) {

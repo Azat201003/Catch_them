@@ -50,11 +50,11 @@ int main()
 
     sf::Sprite spriteObject1(textureObject1);
 
-    buttonText.setString("start");
+    buttonText.setString("Start");
     Button button1(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 39), instruments::Pos(262, 65));
-    buttonText.setString("setting");
+    buttonText.setString("Options");
     Button button2(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 183), instruments::Pos(221, 209));
-    buttonText.setString("quit");
+    buttonText.setString("Quit");
     Button button3(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 327), instruments::Pos(273, 353));
     button1.onClick(start);
     button3.onClick(quit);
