@@ -14,22 +14,25 @@ void updateMenuItems(Button* menuObjects[], int size, sf::RenderWindow *window) 
     }
 }
 
+void onFocusMenuButton(sf::Sprite* aSprite, sf::Text* aText);
+void outFocusMenuButton(sf::Sprite* aSprite, sf::Text* aText);
+
 bool isOpenMenu = true;
 sf::RenderWindow window(sf::VideoMode(setting::WIDTH, setting::HEIGHT), "Catch them!");
 
+// loading
+sf::Texture playerTexture;
+sf::Texture textureObject1;
+sf::Texture backgroundTexture;
+sf::Texture buttonBackgtoundTexture;
+sf::Texture buttonBackgtoundTextureOnFocus;
+
+sf::Image icon;
+
+sf::Font fontButtons;
+
 int main()
 {
-    // loading
-    sf::Texture playerTexture;
-    sf::Texture textureObject1;
-    sf::Texture backgroundTexture;
-    sf::Texture buttonBackgtoundTexture;
-
-    sf::Image icon;
-
-    sf::Font fontButtons;
-
-
     icon.loadFromFile("res/textures/icon.png");
 
 
@@ -37,12 +40,13 @@ int main()
     textureObject1.loadFromFile("res/textures/sweet.png");
     backgroundTexture.loadFromFile("res/textures/background.png");
     buttonBackgtoundTexture.loadFromFile("res/textures/buttonBackground.png");
+    buttonBackgtoundTextureOnFocus.loadFromFile("res/textures/buttonBackgroundOnFocus.png");
 
-    fontButtons.loadFromFile("res/fonts/Inter-SemiBold.ttf");
+    fontButtons.loadFromFile("res/fonts/MarckScript-Regular.ttf");
 
     sf::Text buttonText;
 
-    buttonText.setFillColor(sf::Color(135, 195, 143, 255));
+    buttonText.setFillColor(sf::Color(34, 111, 84));
     buttonText.setFont(fontButtons);
     buttonText.setCharacterSize(50);
 
@@ -56,8 +60,14 @@ int main()
     Button button2(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 183), instruments::Pos(221, 209));
     buttonText.setString("Quit");
     Button button3(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 327), instruments::Pos(273, 353));
-    button1.onClick(start);
-    button3.onClick(quit);
+    button1.setOnClickFunction(start);
+    button3.setOnClickFunction(quit);
+    button1.setOnFocusFunction(onFocusMenuButton);
+    button2.setOnFocusFunction(onFocusMenuButton);
+    button3.setOnFocusFunction(onFocusMenuButton);
+    button1.setOutFocusFunction(outFocusMenuButton);
+    button2.setOutFocusFunction(outFocusMenuButton);
+    button3.setOutFocusFunction(outFocusMenuButton);
 
     Player player(setting::FIRST_PLAYER_POS, playerSprite);
     Draw draw;
@@ -105,4 +115,15 @@ void start() {
 
 void quit() {
     window.close();
+}
+
+void onFocusMenuButton(sf::Sprite* aSprite, sf::Text* aText) {
+    aSprite->setTexture(buttonBackgtoundTextureOnFocus);
+    aText->setOutlineThickness(2);
+    aText->setOutlineColor(sf::Color(244, 240, 187));
+}
+
+void outFocusMenuButton(sf::Sprite* aSprite, sf::Text* aText) {
+    aSprite->setTexture(buttonBackgtoundTexture);
+    aText->setOutlineThickness(0);
 }
