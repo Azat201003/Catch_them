@@ -10,12 +10,17 @@ public:
 class Button : public MenuItem {
 public:
 	Button(sf::Texture* aTexture, sf::Text aText, instruments::Pos texturePos, instruments::Pos textPos);
-	void onClick(void (*aFoo)());
+	void setOnClickFunction(void (*aFoo)());
+	void setOnFocusFunction(void (*aFoo) (sf::Sprite*, sf::Text*));
+	void setOutFocusFunction(void (*aFoo) (sf::Sprite*, sf::Text*));
 	void update(sf::RenderWindow* window);
 	void draw(sf::RenderWindow* window) override;
 private:
 	sf::Sprite	sprite	;
 	sf::Text	text	;
-	void (*onclick) ()		;
+	sf::Cursor	cursor	;
+	void (*onclick) ()	;
+	void (*onFocus) (sf::Sprite*, sf::Text*);
+	void (*outFocus) (sf::Sprite*, sf::Text*);
 };
 
