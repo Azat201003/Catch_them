@@ -4,20 +4,19 @@
 #include <iostream>
 
 using namespace setting;
-using namespace sf;
 
-Player::Player(instruments::Pos aPos, Sprite aSprite) {
+Player::Player(instruments::Pos aPos, sf::Sprite aSprite) {
 	pos = aPos;
 	sprite = aSprite;
 	coins = 0;
 }
 void Player::move() {
-	if (Keyboard::isKeyPressed(Keyboard::A) ||
-		Keyboard::isKeyPressed(Keyboard::Left)) {
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) ||
+		sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
 		pos.x -= SPEED_PLAYER;
 	} 
-	if (Keyboard::isKeyPressed(Keyboard::D) ||
-		Keyboard::isKeyPressed(Keyboard::Right)) {
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) ||
+		sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
 		pos.x += SPEED_PLAYER;
 	}
 	sprite.setPosition(pos.x, pos.y);
@@ -26,7 +25,7 @@ void Player::move() {
 instruments::Pos Player::getPos() {
 	return pos;
 }
-Sprite Player::getSprite() {
+sf::Sprite Player::getSprite() {
 	return sprite;
 }
 

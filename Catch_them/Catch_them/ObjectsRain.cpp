@@ -2,6 +2,8 @@
 #include "Collision.h"
 #include "setting.h"
 #include <random>
+#include <SFML/Audio.hpp>
+#include <SFML/Graphics.hpp>
 
 ObjectsRain::ObjectsRain(std::vector<sf::Sprite> aSprites) {
 	sprites = aSprites;
@@ -59,6 +61,10 @@ void ObjectsRain::isCollisionPlayer(int indexObject, Player *player) {
 
 	if (objectCol.collisionDetect(playerCol)) {
 		player->addCoins(1);
+		sf::Sound sound;
+		sf::SoundBuffer soundBuffer;
+		sound.setBuffer(soundBuffer);
+		soundBuffer.loadFromFile("res/sounds/pick.wav");
 		auto iter = objects.cbegin();
 		objects.erase(iter + indexObject);
 		addObject();
