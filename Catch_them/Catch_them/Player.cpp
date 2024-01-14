@@ -10,14 +10,15 @@ Player::Player(instruments::Pos aPos, sf::Sprite aSprite) {
 	sprite = aSprite;
 	coins = 0;
 }
-void Player::move() {
+void Player::move(float wasTime) {
+	float speed = SPEED_PLAYER * wasTime;
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) ||
 		sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-		pos.x -= SPEED_PLAYER;
+		pos.x -= speed;
 	} 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) ||
 		sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-		pos.x += SPEED_PLAYER;
+		pos.x += speed;
 	}
 	sprite.setPosition(pos.x, pos.y);
 }
@@ -36,9 +37,11 @@ int Player::getCoins() {
 	return coins;
 }
 
-void Player::kick(int damage) {
+void Player::kick(int damage, bool *isOpenMenu) {
 	hp -= damage;
 	if (hp <= 0) {
-		// game over
+		(*isOpenMenu) = true;
+		coins = 0;
+		hp = setting::HP;
 	}
 }

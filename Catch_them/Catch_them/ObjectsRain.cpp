@@ -10,19 +10,19 @@ ObjectsRain::ObjectsRain(std::vector<sf::Sprite> aSprites) {
 	addObject();
 }
 
-void ObjectsRain::update(Player *player) {
+void ObjectsRain::update(Player *player, float wasTime, bool *isOpenMenu) {
 	if (objects.size() > setting::MAX_NUM_OF_PRICES) {
 
 	}
 	for (int i = 0; i < objects.size(); i++) {
-		objects.at(i).move(objects.at(i).getSpeed());
+		objects.at(i).move(objects.at(i).getSpeed() * wasTime);
 		if (objects.at(i).getSprite().getPosition().y - objects.at(i).getSprite().getTextureRect().height / 2 > setting::HEIGHT) {
 			auto iter = objects.cbegin();
 			objects.erase(iter+i);
 			addObject();
-			player->kick(1);
+			player->kick(1, isOpenMenu);
 		}
-		spawnLine(i);
+		spawnLine(i, wasTime);
 		isCollisionPlayer(i, player);
 	}
 }
@@ -31,9 +31,9 @@ std::vector<Object> ObjectsRain::getObjects() {
 	return objects;
 }
 
-void ObjectsRain::spawnLine(int i) {
+void ObjectsRain::spawnLine(int i, float wasTime) {
 	Object object = objects.at(i);
-	if (object.getSprite().getPosition().y > setting::SPAWN_LINE && objects.size() < setting::MAX_NUM_OF_PRICES && object.getSprite().getPosition().y < setting::SPAWN_LINE + object.getSpeed()) {
+	if (object.getSprite().getPosition().y > setting::SPAWN_LINE && objects.size() < setting::MAX_NUM_OF_PRICES) {
 		addObject(); 
 	}
 }

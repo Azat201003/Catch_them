@@ -25,12 +25,12 @@ namespace setting {
 	static int WIDTH				= 640;
 	static int HEIGHT				= 480;
 	static int PLAYER_WIDTH			= 82;
-	static int PLAYER_HEIGHT		= 113;
+	static int PLAYER_HEIGHT		= 98;
 	static int MAX_NUM_OF_PRICES	= 4;
 	static int SPAWN_LINE			= HEIGHT - 250;
 	static int HP					= 10;
-	static float SPEED_FALLING		= 2;
-	static float SPEED_PLAYER		= 5;
+	static float SPEED_FALLING		= 2 * 0.0001;
+	static float SPEED_PLAYER		= 5 * 0.0001;
 	static float LEN_COINS			= 100;
 	static instruments::Pos FIRST_PLAYER_POS(WIDTH / 2 - PLAYER_WIDTH / 2, HEIGHT - PLAYER_HEIGHT);
 }

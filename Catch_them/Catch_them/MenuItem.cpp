@@ -1,11 +1,13 @@
 #include "MenuItem.h"
 
-Button::Button(sf::Texture* aTexture, sf::Text aText, instruments::Pos texturePos, instruments::Pos textPos) {
+Button::Button(sf::Texture* aTexture, sf::Text aText, instruments::Pos texturePos, instruments::Pos textPos, sf::Image defaultCursorImage) {
 	sprite.setTexture(*aTexture);
 	sprite.setPosition(texturePos.x, texturePos.y);
 
 	text	= aText   ;
 	text.setPosition(textPos.x, textPos.y);
+	defaultCursor.loadFromPixels(defaultCursorImage.getPixelsPtr(), defaultCursorImage.getSize(), {0, 0});
+	handCursor.loadFromSystem(sf::Cursor::Hand);
 }
 
 void Button::setOnClickFunction(void(*aFoo)()) {
@@ -23,17 +25,15 @@ void Button::setOutFocusFunction(void (*aFoo) (sf::Sprite*, sf::Text*)) {
 void Button::update(sf::RenderWindow *window) {
 	sf::FloatRect bounds = sprite.getGlobalBounds();
 	instruments::Pos mouseCoords(sf::Mouse::getPosition(*window).x, sf::Mouse::getPosition(*window).y);
-	if (bounds.contains(mouseCoords.x, mouseCoords.y)) {
+	if (bounds.contains(mouseCoords.x, mouseCoords.y) && window->hasFocus()) {
 		onFocus(&sprite, &text);
-		cursor.loadFromSystem(sf::Cursor::Hand);
-		window->setMouseCursor(cursor);
+		window->setMouseCursor(handCursor);
 		if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
 			onclick();
 		}
 		return;
 	}
-	cursor.loadFromSystem(sf::Cursor::Arrow);
-	window->setMouseCursor(cursor);
+	window->setMouseCursor(defaultCursor);
 	outFocus(&sprite, &text);
 
 }

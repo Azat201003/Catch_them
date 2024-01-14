@@ -6,12 +6,12 @@ class Player
 {
 public:
 	Player(instruments::Pos aPos, sf::Sprite aSprite);
-	void move();
+	void move(float wasTime);
 	instruments::Pos getPos();
 	sf::Sprite getSprite();
 	void addCoins(int num);
 	int getCoins();
-	void kick(int damage);
+	void kick(int damage, bool *isOpenMenu);
 private:
 	instruments::Pos pos;
 	sf::Sprite sprite;

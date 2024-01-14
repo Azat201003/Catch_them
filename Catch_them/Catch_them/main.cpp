@@ -28,12 +28,14 @@ sf::Texture buttonBackgtoundTexture;
 sf::Texture buttonBackgtoundTextureOnFocus;
 
 sf::Image icon;
+sf::Image defaultCursorImage;
 
 sf::Font fontButtons;
 
 int main()
 {
     icon.loadFromFile("res/textures/icon.png");
+    defaultCursorImage.loadFromFile("res/textures/cursor.png");
 
 
     playerTexture.loadFromFile("res/textures/box.png");
@@ -41,6 +43,7 @@ int main()
     backgroundTexture.loadFromFile("res/textures/background.png");
     buttonBackgtoundTexture.loadFromFile("res/textures/buttonBackground.png");
     buttonBackgtoundTextureOnFocus.loadFromFile("res/textures/buttonBackgroundOnFocus.png");
+
 
     fontButtons.loadFromFile("res/fonts/MarckScript-Regular.ttf");
 
@@ -55,12 +58,13 @@ int main()
     sf::Sprite spriteObject1(textureObject1);
 
     buttonText.setString("Start");
-    Button button1(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 39), instruments::Pos(262, 65));
+    Button button1(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 39), instruments::Pos(262, 65), defaultCursorImage);
     buttonText.setString("Options");
-    Button button2(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 183), instruments::Pos(221, 209));
+    Button button2(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 183), instruments::Pos(221, 209), defaultCursorImage);
     buttonText.setString("Quit");
-    Button button3(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 327), instruments::Pos(273, 353));
+    Button button3(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 327), instruments::Pos(273, 353), defaultCursorImage);
     button1.setOnClickFunction(start);
+    button2.setOnClickFunction(openSetting);
     button3.setOnClickFunction(quit);
     button1.setOnFocusFunction(onFocusMenuButton);
     button2.setOnFocusFunction(onFocusMenuButton);
@@ -79,31 +83,41 @@ int main()
 
     window.setIcon(128, 128, icon.getPixelsPtr());
 
+    sf::Clock startFrame;
+    float wasTime;
+
     while (window.isOpen())
     {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
-            isOpenMenu = true;
-        }
+        if (window.hasFocus()) {
+            wasTime = startFrame.getElapsedTime().asMicroseconds();
+            setting::SPEED_FALLING += wasTime * 0.001 * 0.0001;
+            setting::SPEED_PLAYER += wasTime * 0.0005 * 0.0001;
+            startFrame.restart();
+            sf::Event event;
+            while (window.pollEvent(event))
+            {
+                if (event.type == sf::Event::Closed)
+                    window.close();
+            }
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
+                isOpenMenu = true;
+            }
 
-        player.move();
-        OR.update(&player);
-        window.clear();
+            player.move(wasTime);
+            OR.update(&player, wasTime, &isOpenMenu);
+            window.clear();
 
-        draw.drawBackground(backgroundTexture, &window);
-        draw.drawObjects(OR.getObjects(), &window);
-        if (isOpenMenu) {
-            draw.drawMenu(menuItems, 3, &window);
-            updateMenuItems(buttonItems, 3, &window);
-        } else {
-            draw.drawPlayer(player, &window);
+            draw.drawBackground(backgroundTexture, &window);
+            draw.drawObjects(OR.getObjects(), &window);
+            if (isOpenMenu) {
+                draw.drawMenu(menuItems, 3, &window);
+                updateMenuItems(buttonItems, 3, &window);
+            }
+            else {
+                draw.drawPlayer(player, &window);
+            }
+            window.display();
         }
-        window.display();
     }
 
     return 0;
@@ -111,6 +125,10 @@ int main()
 
 void start() {
     isOpenMenu = false;
+}
+
+void openSetting() {
+
 }
 
 void quit() {

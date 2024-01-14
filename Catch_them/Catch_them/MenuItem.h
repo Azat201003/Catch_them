@@ -1,6 +1,7 @@
 #pragma once
 #include "setting.h"
 #include <SFML/Graphics.hpp>
+#include <string>
 
 class MenuItem {
 public:
@@ -9,7 +10,11 @@ public:
 
 class Button : public MenuItem {
 public:
-	Button(sf::Texture* aTexture, sf::Text aText, instruments::Pos texturePos, instruments::Pos textPos);
+	Button(sf::Texture* aTexture, 
+		sf::Text aText, 
+		instruments::Pos texturePos, 
+		instruments::Pos textPos, 
+		sf::Image defaultCursorImage);
 	void setOnClickFunction(void (*aFoo)());
 	void setOnFocusFunction(void (*aFoo) (sf::Sprite*, sf::Text*));
 	void setOutFocusFunction(void (*aFoo) (sf::Sprite*, sf::Text*));
@@ -18,7 +23,8 @@ public:
 private:
 	sf::Sprite	sprite	;
 	sf::Text	text	;
-	sf::Cursor	cursor	;
+	sf::Cursor	defaultCursor;
+	sf::Cursor	handCursor;
 	void (*onclick) ()	;
 	void (*onFocus) (sf::Sprite*, sf::Text*);
 	void (*outFocus) (sf::Sprite*, sf::Text*);
