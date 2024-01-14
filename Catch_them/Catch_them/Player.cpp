@@ -10,6 +10,9 @@ Player::Player(instruments::Pos aPos, sf::Sprite aSprite) {
 	sprite = aSprite;
 	coins = 0;
 }
+Player::Player() {
+
+}
 void Player::move(float wasTime) {
 	float speed = SPEED_PLAYER * wasTime;
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) ||
@@ -30,18 +33,26 @@ sf::Sprite Player::getSprite() {
 	return sprite;
 }
 
-void Player::addCoins(int num) {
-	coins += num;
+void Player::addCoins(int num, bool* isOpenMenu) {
+	if (!(*isOpenMenu)) {
+		coins += num;
+	}
 }
 int Player::getCoins() {
 	return coins;
 }
 
 void Player::kick(int damage, bool *isOpenMenu) {
-	hp -= damage;
-	if (hp <= 0) {
-		(*isOpenMenu) = true;
-		coins = 0;
-		hp = setting::HP;
+	if(!(*isOpenMenu)) {
+		hp -= damage;
+		if (hp <= 0) {
+			(*isOpenMenu) = true;
+			coins = 0;
+			hp = setting::HP;
+		}
 	}
+}
+
+int Player::getHp() {
+	return hp;
 }

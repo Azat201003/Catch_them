@@ -13,8 +13,7 @@ public:
 	Button(sf::Texture* aTexture, 
 		sf::Text aText, 
 		instruments::Pos texturePos, 
-		instruments::Pos textPos, 
-		sf::Image defaultCursorImage);
+		instruments::Pos textPos);
 	void setOnClickFunction(void (*aFoo)());
 	void setOnFocusFunction(void (*aFoo) (sf::Sprite*, sf::Text*));
 	void setOutFocusFunction(void (*aFoo) (sf::Sprite*, sf::Text*));
@@ -23,8 +22,6 @@ public:
 private:
 	sf::Sprite	sprite	;
 	sf::Text	text	;
-	sf::Cursor	defaultCursor;
-	sf::Cursor	handCursor;
 	void (*onclick) ()	;
 	void (*onFocus) (sf::Sprite*, sf::Text*);
 	void (*outFocus) (sf::Sprite*, sf::Text*);

@@ -32,6 +32,13 @@ sf::Image defaultCursorImage;
 
 sf::Font fontButtons;
 
+sf::Cursor	defaultCursor;
+sf::Cursor	handCursor;
+
+Player player;
+
+int numInFocusItems = 0;
+
 int main()
 {
     icon.loadFromFile("res/textures/icon.png");
@@ -52,17 +59,20 @@ int main()
     buttonText.setFillColor(sf::Color(34, 111, 84));
     buttonText.setFont(fontButtons);
     buttonText.setCharacterSize(50);
+    
+    defaultCursor.loadFromPixels(defaultCursorImage.getPixelsPtr(), defaultCursorImage.getSize(), { 0, 0 });
+    handCursor.loadFromSystem(sf::Cursor::Hand);;
 
     sf::Sprite playerSprite(playerTexture);
 
     sf::Sprite spriteObject1(textureObject1);
 
     buttonText.setString("Start");
-    Button button1(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 39), instruments::Pos(262, 65), defaultCursorImage);
+    Button button1(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 39), instruments::Pos(262, 65));
     buttonText.setString("Options");
-    Button button2(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 183), instruments::Pos(221, 209), defaultCursorImage);
+    Button button2(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 183), instruments::Pos(221, 209));
     buttonText.setString("Quit");
-    Button button3(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 327), instruments::Pos(273, 353), defaultCursorImage);
+    Button button3(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 327), instruments::Pos(273, 353));
     button1.setOnClickFunction(start);
     button2.setOnClickFunction(openSetting);
     button3.setOnClickFunction(quit);
@@ -73,7 +83,7 @@ int main()
     button2.setOutFocusFunction(outFocusMenuButton);
     button3.setOutFocusFunction(outFocusMenuButton);
 
-    Player player(setting::FIRST_PLAYER_POS, playerSprite);
+    player = Player(setting::FIRST_PLAYER_POS, playerSprite);
     Draw draw;
     ObjectsRain OR({spriteObject1});
 
@@ -89,6 +99,7 @@ int main()
     while (window.isOpen())
     {
         if (window.hasFocus()) {
+            numInFocusItems = 0;
             wasTime = startFrame.getElapsedTime().asMicroseconds();
             setting::SPEED_FALLING += wasTime * 0.001 * 0.0001;
             setting::SPEED_PLAYER += wasTime * 0.0005 * 0.0001;
@@ -112,6 +123,8 @@ int main()
             if (isOpenMenu) {
                 draw.drawMenu(menuItems, 3, &window);
                 updateMenuItems(buttonItems, 3, &window);
+                if (numInFocusItems == 0)
+                    window.setMouseCursor(defaultCursor);
             }
             else {
                 draw.drawPlayer(player, &window);
@@ -139,6 +152,8 @@ void onFocusMenuButton(sf::Sprite* aSprite, sf::Text* aText) {
     aSprite->setTexture(buttonBackgtoundTextureOnFocus);
     aText->setOutlineThickness(2);
     aText->setOutlineColor(sf::Color(244, 240, 187));
+    numInFocusItems += 1;
+    window.setMouseCursor(handCursor);
 }
 
 void outFocusMenuButton(sf::Sprite* aSprite, sf::Text* aText) {

@@ -11,9 +11,6 @@ ObjectsRain::ObjectsRain(std::vector<sf::Sprite> aSprites) {
 }
 
 void ObjectsRain::update(Player *player, float wasTime, bool *isOpenMenu) {
-	if (objects.size() > setting::MAX_NUM_OF_PRICES) {
-
-	}
 	for (int i = 0; i < objects.size(); i++) {
 		objects.at(i).move(objects.at(i).getSpeed() * wasTime);
 		if (objects.at(i).getSprite().getPosition().y - objects.at(i).getSprite().getTextureRect().height / 2 > setting::HEIGHT) {
@@ -23,7 +20,7 @@ void ObjectsRain::update(Player *player, float wasTime, bool *isOpenMenu) {
 			player->kick(1, isOpenMenu);
 		}
 		spawnLine(i, wasTime);
-		isCollisionPlayer(i, player);
+		isCollisionPlayer(i, player, isOpenMenu);
 	}
 }
 
@@ -47,7 +44,7 @@ void ObjectsRain::addObject() {
 	objects.push_back(object);
 }
 
-void ObjectsRain::isCollisionPlayer(int indexObject, Player *player) {
+void ObjectsRain::isCollisionPlayer(int indexObject, Player *player, bool* isOpenMenu) {
 	instruments::Pos objectPos(objects.at(indexObject).getSprite().getPosition().x,
 				  objects.at(indexObject).getSprite().getPosition().y);
 	instruments::Pos objectSize(objects.at(indexObject).getSprite().getTextureRect().width,
@@ -60,7 +57,7 @@ void ObjectsRain::isCollisionPlayer(int indexObject, Player *player) {
 	Collision playerCol(player->getPos(), playerSize);
 
 	if (objectCol.collisionDetect(playerCol)) {
-		player->addCoins(1);
+		player->addCoins(1, isOpenMenu);
 		sf::Sound sound;
 		sf::SoundBuffer soundBuffer;
 		sound.setBuffer(soundBuffer);

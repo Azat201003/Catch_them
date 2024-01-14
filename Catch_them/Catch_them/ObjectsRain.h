@@ -13,7 +13,7 @@ public:
 	void update(Player *player, float wasTime, bool *isOpenMenu);
 	void spawnLine(int i, float wasTime);
 	void addObject();
-	void isCollisionPlayer(int indexObject, Player *player);
+	void isCollisionPlayer(int indexObject, Player *player, bool* isOpenMenu);
 private:
 	std::vector<Object> objects;
 	std::vector<sf::Sprite> sprites;
