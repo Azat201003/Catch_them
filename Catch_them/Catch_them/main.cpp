@@ -29,6 +29,7 @@ sf::Texture buttonBackgtoundTextureOnFocus;
 
 sf::Image icon;
 sf::Image defaultCursorImage;
+sf::Image handCursorImage;
 
 sf::Font fontButtons;
 
@@ -43,6 +44,7 @@ int main()
 {
     icon.loadFromFile("res/textures/icon.png");
     defaultCursorImage.loadFromFile("res/textures/cursor.png");
+    handCursorImage.loadFromFile("res/textures/handCursor.png");
 
 
     playerTexture.loadFromFile("res/textures/box.png");
@@ -59,9 +61,9 @@ int main()
     buttonText.setFillColor(sf::Color(34, 111, 84));
     buttonText.setFont(fontButtons);
     buttonText.setCharacterSize(50);
-    
+
     defaultCursor.loadFromPixels(defaultCursorImage.getPixelsPtr(), defaultCursorImage.getSize(), { 0, 0 });
-    handCursor.loadFromSystem(sf::Cursor::Hand);;
+    handCursor.loadFromPixels(handCursorImage.getPixelsPtr(), handCursorImage.getSize(), { 0, 0 });
 
     sf::Sprite playerSprite(playerTexture);
 
@@ -127,6 +129,7 @@ int main()
                     window.setMouseCursor(defaultCursor);
             }
             else {
+                window.setMouseCursor(defaultCursor);
                 draw.drawPlayer(player, &window);
             }
             window.display();
