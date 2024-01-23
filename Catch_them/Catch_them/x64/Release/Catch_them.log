@@ -1,1 +1,120 @@
-﻿  Catch_them.vcxproj -> C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\x64\Release\Catch_them.exe
+﻿  Collision.cpp
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(19,90): warning C4244: аргумент: преобразование "_Rep" в "unsigned int", возможна потеря данных
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(32,30): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(33,29): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(35,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(35,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  Draw.cpp
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(19,90): warning C4244: аргумент: преобразование "_Rep" в "unsigned int", возможна потеря данных
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(32,30): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(33,29): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(35,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(35,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  main.cpp
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(19,90): warning C4244: аргумент: преобразование "_Rep" в "unsigned int", возможна потеря данных
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(32,30): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(33,29): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(35,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(35,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\main.cpp(105,65): warning C4244: =: преобразование "sf::Int64" в "float", возможна потеря данных
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\main.cpp(106,55): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\main.cpp(107,55): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+  MenuItem.cpp
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(19,90): warning C4244: аргумент: преобразование "_Rep" в "unsigned int", возможна потеря данных
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(32,30): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(33,29): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(35,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(35,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\MenuItem.cpp(25,97): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\MenuItem.cpp(25,62): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+  Object.cpp
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(19,90): warning C4244: аргумент: преобразование "_Rep" в "unsigned int", возможна потеря данных
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(32,30): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(33,29): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(35,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(35,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  ObjectsRain.cpp
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(19,90): warning C4244: аргумент: преобразование "_Rep" в "unsigned int", возможна потеря данных
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(32,30): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(33,29): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(35,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(35,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(39,72): warning C4244: аргумент: преобразование "unsigned __int64" в "float", возможна потеря данных
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(40,67): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(40,101): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(42,30): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(51,60): warning C4244: аргумент: преобразование "const T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(50,82): warning C4244: аргумент: преобразование "const T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(54,44): warning C4244: аргумент: преобразование "const T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(53,66): warning C4244: аргумент: преобразование "const T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+  Player.cpp
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(19,90): warning C4244: аргумент: преобразование "_Rep" в "unsigned int", возможна потеря данных
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(32,30): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(33,29): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(35,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\Catch_them\setting.h(35,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  Создание кода
+  Previous IPDB was built with incompatible compiler, fall back to full compilation.
+  All 413 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  Catch_them.vcxproj -> C:\Users\UserHuman\Desktop\other stuff\catch-them\Catch_them\Catch_them\x64\Release\Catch_them.exe
