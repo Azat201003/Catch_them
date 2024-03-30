@@ -3,7 +3,7 @@
 #include "Draw.h"
 #include "setting.h"
 #include "ObjectsRain.h"
-#include "menuItem.h"
+#include "MenuItem.h"
 
 void start();
 void quit();
@@ -17,7 +17,8 @@ void updateMenuItems(Button* menuObjects[], int size, sf::RenderWindow *window) 
 void onFocusMenuButton(sf::Sprite* aSprite, sf::Text* aText);
 void outFocusMenuButton(sf::Sprite* aSprite, sf::Text* aText);
 
-bool isOpenMenu = true;
+instruments::window s_window = instruments::window::menu;
+
 sf::RenderWindow window(sf::VideoMode(setting::WIDTH, setting::HEIGHT), "Catch them!");
 
 // loading
@@ -90,7 +91,7 @@ int main()
     ObjectsRain OR({spriteObject1});
 
     MenuItem* menuItems[] = { &button1, &button2, &button3 };
-    Button* buttonItems[] = { &button1, &button2, &button3 };
+    Button* menuButtonItems[] = { &button1, &button2, &button3 };
 
 
     window.setIcon(128, 128, icon.getPixelsPtr());
@@ -111,20 +112,28 @@ int main()
             {
                 if (event.type == sf::Event::Closed)
                     window.close();
+                else if (event.type == sf::Event::KeyReleased
+                      && event.key.scancode == sf::Keyboard::Scan::Escape)
+                    s_window = s_window == instruments::window::game ? instruments::window::menu : instruments::window::game;
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
-                isOpenMenu = true;
             }
 
             player.move(wasTime);
-            OR.update(&player, wasTime, &isOpenMenu);
+            OR.update(&player, wasTime, s_window);
             window.clear();
 
             draw.drawBackground(backgroundTexture, &window);
             draw.drawObjects(OR.getObjects(), &window);
-            if (isOpenMenu) {
+            if (s_window == instruments::window::menu) {
                 draw.drawMenu(menuItems, 3, &window);
-                updateMenuItems(buttonItems, 3, &window);
+                updateMenuItems(menuButtonItems, 3, &window);
+                if (numInFocusItems == 0)
+                    window.setMouseCursor(defaultCursor);
+            }
+            else if (s_window == instruments::window::settings) {
+                draw.drawMenu(menuItems, 3, &window);
+                updateMenuItems(menuButtonItems, 3, &window);
                 if (numInFocusItems == 0)
                     window.setMouseCursor(defaultCursor);
             }
@@ -140,11 +149,11 @@ int main()
 }
 
 void start() {
-    isOpenMenu = false;
+    s_window = instruments::window::game;
 }
 
 void openSetting() {
-
+    s_window = instruments::window::settings;
 }
 
 void quit() {

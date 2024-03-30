@@ -3,6 +3,11 @@
 #include <stdlib.h>
 #include <chrono>
 namespace instruments {
+	enum window {
+		game,
+		menu,
+		settings
+	};
 	class Pos {
 	public:
 		float x = 0, y = 0;

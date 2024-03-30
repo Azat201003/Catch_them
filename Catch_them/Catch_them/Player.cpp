@@ -33,8 +33,8 @@ sf::Sprite Player::getSprite() {
 	return sprite;
 }
 
-void Player::addCoins(int num, bool* isOpenMenu) {
-	if (!(*isOpenMenu)) {
+void Player::addCoins(int num, instruments::window s_window) {
+	if (s_window == instruments::window::game) {
 		coins += num;
 	}
 }
@@ -42,11 +42,11 @@ int Player::getCoins() {
 	return coins;
 }
 
-void Player::kick(int damage, bool *isOpenMenu) {
-	if(!(*isOpenMenu)) {
+void Player::kick(int damage, instruments::window s_window) {
+	if(s_window == instruments::window::game) {
 		hp -= damage;
 		if (hp <= 0) {
-			(*isOpenMenu) = true;
+			s_window = instruments::window::menu;
 			coins = 0;
 			hp = setting::HP;
 		}

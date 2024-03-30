@@ -10,9 +10,9 @@ public:
 	void move(float wasTime);
 	instruments::Pos getPos();
 	sf::Sprite getSprite();
-	void addCoins(int num, bool* isOpenMenu);
+	void addCoins(int num, instruments::window s_window);
 	int getCoins();
-	void kick(int damage, bool *isOpenMenu);
+	void kick(int damage, instruments::window s_window);
 	int getHp();
 private:
 	instruments::Pos pos;
