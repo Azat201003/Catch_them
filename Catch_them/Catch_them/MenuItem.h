@@ -6,6 +6,7 @@
 class MenuItem {
 public:
 	virtual void draw(sf::RenderWindow* window) = 0;
+	virtual void update(sf::RenderWindow* window) = 0;
 };
 
 class Button : public MenuItem {
@@ -17,7 +18,7 @@ public:
 	void setOnClickFunction(void (*aFoo)());
 	void setOnFocusFunction(void (*aFoo) (sf::Sprite*, sf::Text*));
 	void setOutFocusFunction(void (*aFoo) (sf::Sprite*, sf::Text*));
-	void update(sf::RenderWindow* window);
+	void update(sf::RenderWindow* window) override;
 	void draw(sf::RenderWindow* window) override;
 private:
 	sf::Sprite	sprite;
@@ -32,19 +33,22 @@ public:
 	Slider(sf::Texture* aTexture,
 		sf::Texture* thumbTexture,
 		instruments::Pos texturePos,
-		instruments::Pos thumbPos, 
-		float leftBorder,
-		float rightBorder);
+		instruments::Pos range,
+		float thumbPos = 0);
 	void setOnFocusFunction(void (*aFoo) (sf::Sprite*));
 	void setOutFocusFunction(void (*aFoo) (sf::Sprite*));
-	void update(sf::RenderWindow* window);
+	void setOnChangeFunction(void (*aFoo) (float value));
+	void update(sf::RenderWindow* window) override;
 	void draw(sf::RenderWindow* window) override;
 private:
-	sf::Sprite	sprite;
+	sf::Sprite sprite;
+	sf::Sprite thumbSprite;
 	void (*onFocus) (sf::Sprite*);
 	void (*outFocus) (sf::Sprite*);
-	float rightBorder;
-	float leftBorder;
+	void (*onChange) (float value);
+	instruments::Pos range;
+	float thumbPos;
+
 	bool isChanging = false;
 };
 

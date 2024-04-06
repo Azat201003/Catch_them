@@ -8,7 +8,10 @@
 void start();
 void quit();
 void openSetting();
-void updateMenuItems(Button* menuObjects[], int size, sf::RenderWindow *window) {
+void onFocusSlider(sf::Sprite* aSprite);
+void outFocusSlider(sf::Sprite* aSprite);
+void outChangeVolumeSlider(float value);
+void updateMenuItems(MenuItem* menuObjects[], int size, sf::RenderWindow *window) {
     for (int i = 0; i < size; i++) {
         menuObjects[i]->update(window);
     }
@@ -25,8 +28,10 @@ sf::RenderWindow window(sf::VideoMode(setting::WIDTH, setting::HEIGHT), "Catch t
 sf::Texture playerTexture;
 sf::Texture textureObject1;
 sf::Texture backgroundTexture;
-sf::Texture buttonBackgtoundTexture;
-sf::Texture buttonBackgtoundTextureOnFocus;
+sf::Texture buttonBackgroundTexture;
+sf::Texture buttonBackgroundTextureOnFocus;
+sf::Texture thumbBackgroundTexture;
+sf::Texture sliderBackgroundTexture;
 
 sf::Image icon;
 sf::Image defaultCursorImage;
@@ -41,6 +46,8 @@ Player player;
 
 int numInFocusItems = 0;
 
+float volume = 50;
+
 int main()
 {
     icon.loadFromFile("res/textures/icon.png");
@@ -51,8 +58,10 @@ int main()
     playerTexture.loadFromFile("res/textures/box.png");
     textureObject1.loadFromFile("res/textures/sweet.png");
     backgroundTexture.loadFromFile("res/textures/background.png");
-    buttonBackgtoundTexture.loadFromFile("res/textures/buttonBackground.png");
-    buttonBackgtoundTextureOnFocus.loadFromFile("res/textures/buttonBackgroundOnFocus.png");
+    buttonBackgroundTexture.loadFromFile("res/textures/buttonBackground.png");
+    buttonBackgroundTextureOnFocus.loadFromFile("res/textures/buttonBackgroundOnFocus.png");
+    thumbBackgroundTexture.loadFromFile("res/textures/thumbBackground.png");
+    sliderBackgroundTexture.loadFromFile("res/textures/sliderBackground.png");
 
 
     fontButtons.loadFromFile("res/fonts/MarckScript-Regular.ttf");
@@ -71,11 +80,11 @@ int main()
     sf::Sprite spriteObject1(textureObject1);
 
     buttonText.setString("Start");
-    Button button1(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 39), instruments::Pos(262, 65));
+    Button button1(&buttonBackgroundTexture, buttonText, instruments::Pos(52, 39), instruments::Pos(262, 65));
     buttonText.setString("Options");
-    Button button2(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 183), instruments::Pos(221, 209));
+    Button button2(&buttonBackgroundTexture, buttonText, instruments::Pos(52, 183), instruments::Pos(221, 209));
     buttonText.setString("Quit");
-    Button button3(&buttonBackgtoundTexture, buttonText, instruments::Pos(52, 327), instruments::Pos(273, 353));
+    Button button3(&buttonBackgroundTexture, buttonText, instruments::Pos(52, 327), instruments::Pos(273, 353));
     button1.setOnClickFunction(start);
     button2.setOnClickFunction(openSetting);
     button3.setOnClickFunction(quit);
@@ -86,12 +95,18 @@ int main()
     button2.setOutFocusFunction(outFocusMenuButton);
     button3.setOutFocusFunction(outFocusMenuButton);
 
+    Slider slider(&sliderBackgroundTexture, &thumbBackgroundTexture, instruments::Pos(145, 150), instruments::Pos(0, 100), volume);
+
+    slider.setOnFocusFunction(onFocusSlider);
+    slider.setOutFocusFunction(outFocusSlider);
+    slider.setOnChangeFunction(outChangeVolumeSlider);
+
     player = Player(setting::FIRST_PLAYER_POS, playerSprite);
     Draw draw;
     ObjectsRain OR({spriteObject1});
 
     MenuItem* menuItems[] = { &button1, &button2, &button3 };
-    Button* menuButtonItems[] = { &button1, &button2, &button3 };
+    MenuItem* settingItems[] = { &slider };
 
 
     window.setIcon(128, 128, icon.getPixelsPtr());
@@ -127,13 +142,13 @@ int main()
             draw.drawObjects(OR.getObjects(), &window);
             if (s_window == instruments::window::menu) {
                 draw.drawMenu(menuItems, 3, &window);
-                updateMenuItems(menuButtonItems, 3, &window);
+                updateMenuItems(menuItems, 3, &window);
                 if (numInFocusItems == 0)
                     window.setMouseCursor(defaultCursor);
             }
             else if (s_window == instruments::window::settings) {
-                draw.drawMenu(menuItems, 3, &window);
-                updateMenuItems(menuButtonItems, 3, &window);
+                draw.drawMenu(settingItems, 1, &window);
+                updateMenuItems(settingItems, 1, &window);
                 if (numInFocusItems == 0)
                     window.setMouseCursor(defaultCursor);
             }
@@ -161,14 +176,26 @@ void quit() {
 }
 
 void onFocusMenuButton(sf::Sprite* aSprite, sf::Text* aText) {
-    aSprite->setTexture(buttonBackgtoundTextureOnFocus);
+    aSprite->setTexture(buttonBackgroundTextureOnFocus);
     aText->setOutlineThickness(2);
     aText->setOutlineColor(sf::Color(244, 240, 187));
     numInFocusItems += 1;
     window.setMouseCursor(handCursor);
 }
 
+void onFocusSlider(sf::Sprite* aSprite) {
+
+}
+
+void outFocusSlider(sf::Sprite* aSprite) {
+
+}
+
+void outChangeVolumeSlider(float value) {
+    volume = value;
+}
+
 void outFocusMenuButton(sf::Sprite* aSprite, sf::Text* aText) {
-    aSprite->setTexture(buttonBackgtoundTexture);
+    aSprite->setTexture(buttonBackgroundTexture);
     aText->setOutlineThickness(0);
 }

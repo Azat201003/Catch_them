@@ -1,0 +1,379 @@
+﻿  Collision.cpp
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(24,90): warning C4244: аргумент: преобразование "_Rep" в "unsigned int", возможна потеря данных
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(37,42): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(38,41): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(40,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(40,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  Draw.cpp
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(24,90): warning C4244: аргумент: преобразование "_Rep" в "unsigned int", возможна потеря данных
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(37,42): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(38,41): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(40,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(40,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(60,12): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(60,13): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,22): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "mode"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,22): error C3646: mode: неизвестный спецификатор переопределения
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,12): error C2079: "sf::RenderWindow::VideoMode" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,40): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,34): error C2079: "sf::RenderWindow::String" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,40): warning C4228: Нестандартное расширение: квалификаторы после запятой в списке операторов объявления пропускаются.
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,131): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,132): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,34): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "handle"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,34): error C3646: handle: неизвестный спецификатор переопределения
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,21): error C2079: "sf::RenderWindow::WindowHandle" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,40): error C2178: "sf::RenderWindow::WindowHandle" нельзя объявить с описателем "explicit"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,48): error C2079: "sf::RenderWindow::ContextSettings" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): error C2178: "sf::RenderWindow::ContextSettings" нельзя объявить с описателем "explicit"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): warning C4228: Нестандартное расширение: квалификаторы после запятой в списке операторов объявления пропускаются.
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,93): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,94): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(105,20): error C2523: sf::RenderWindow::~Window: несовпадение тегов деструктор
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,35): error C2327: sf::RenderWindow::VideoMode: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,53): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,53): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,35): error C2327: sf::RenderWindow::VideoMode: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,53): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,53): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,18): error C2535: void sf::RenderWindow::create(sf::VideoMode,const int): функция-член уже определена или объявлена
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,18): message : см. объявление "sf::RenderWindow::create"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(150,38): error C2327: sf::RenderWindow::WindowHandle: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,38): error C2327: sf::RenderWindow::WindowHandle: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,67): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,67): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(192,26): error C2327: sf::RenderWindow::ContextSettings: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Graphics\RenderWindow.hpp(44,38): error C2011: sf::RenderWindow: переопределение типа "class"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(49,23): message : см. объявление "sf::RenderWindow"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\Draw.cpp(5,8): error C2027: использование неопределенного типа "sf::RenderWindow"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(49,23): message : см. объявление "sf::RenderWindow"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\Draw.cpp(10,8): error C2027: использование неопределенного типа "sf::RenderWindow"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(49,23): message : см. объявление "sf::RenderWindow"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\Draw.cpp(15,9): error C2027: использование неопределенного типа "sf::RenderWindow"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(49,23): message : см. объявление "sf::RenderWindow"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\Draw.cpp(22,8): error C2027: использование неопределенного типа "sf::RenderWindow"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(49,23): message : см. объявление "sf::RenderWindow"
+  main.cpp
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(60,12): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(60,13): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,22): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "mode"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,22): error C3646: mode: неизвестный спецификатор переопределения
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,12): error C2079: "sf::RenderWindow::VideoMode" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,40): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,34): error C2079: "sf::RenderWindow::String" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,40): warning C4228: Нестандартное расширение: квалификаторы после запятой в списке операторов объявления пропускаются.
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,131): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,132): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,34): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "handle"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,34): error C3646: handle: неизвестный спецификатор переопределения
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,21): error C2079: "sf::RenderWindow::WindowHandle" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,40): error C2178: "sf::RenderWindow::WindowHandle" нельзя объявить с описателем "explicit"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,48): error C2079: "sf::RenderWindow::ContextSettings" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): error C2178: "sf::RenderWindow::ContextSettings" нельзя объявить с описателем "explicit"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): warning C4228: Нестандартное расширение: квалификаторы после запятой в списке операторов объявления пропускаются.
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,93): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,94): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(105,20): error C2523: sf::RenderWindow::~Window: несовпадение тегов деструктор
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,35): error C2327: sf::RenderWindow::VideoMode: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,53): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,53): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,35): error C2327: sf::RenderWindow::VideoMode: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,53): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,53): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,18): error C2535: void sf::RenderWindow::create(sf::VideoMode,const int): функция-член уже определена или объявлена
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,18): message : см. объявление "sf::RenderWindow::create"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(150,38): error C2327: sf::RenderWindow::WindowHandle: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,38): error C2327: sf::RenderWindow::WindowHandle: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,67): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,67): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(192,26): error C2327: sf::RenderWindow::ContextSettings: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Graphics\RenderWindow.hpp(44,38): error C2011: sf::RenderWindow: переопределение типа "class"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(49,23): message : см. объявление "sf::RenderWindow"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(24,90): warning C4244: аргумент: преобразование "_Rep" в "unsigned int", возможна потеря данных
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(37,42): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(38,41): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(40,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(40,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(22,18): error C2079: "window" использует не имеющую определения структуру class "sf::RenderWindow"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(22,24): error C2440: инициализация: невозможно преобразовать "initializer list" в "int"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(22,24): message : Инициализатор содержит слишком много элементов
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(106,65): warning C4244: =: преобразование "sf::Int64" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(107,55): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(108,55): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(126,17): error C2664: "void Draw::drawBackground(sf::Texture,sf::RenderWindow *)": невозможно преобразовать аргумент 2 из "int *" в "sf::RenderWindow *"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(126,52): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\Draw.h(13,7): message : см. объявление "Draw::drawBackground"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(126,17): message : при попытке сопоставить список аргументов "(sf::Texture, int *)"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(127,17): error C2664: "void Draw::drawObjects(std::vector<Object,std::allocator<Object>>,sf::RenderWindow *)": невозможно преобразовать аргумент 2 из "int *" в "sf::RenderWindow *"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(127,47): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\Draw.h(12,7): message : см. объявление "Draw::drawObjects"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(127,17): message : при попытке сопоставить список аргументов "(std::vector<Object,std::allocator<Object>>, int *)"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(129,21): error C2664: "void Draw::drawMenu(MenuItem *[],int,sf::RenderWindow *)": невозможно преобразовать аргумент 3 из "int *" в "sf::RenderWindow *"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(129,45): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\Draw.h(14,7): message : см. объявление "Draw::drawMenu"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(129,21): message : при попытке сопоставить список аргументов "(MenuItem *[3], int, int *)"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(130,17): error C2664: "void updateMenuItems(Button *[],int,sf::RenderWindow *)": невозможно преобразовать аргумент 3 из "int *" в "sf::RenderWindow *"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(130,53): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(11,6): message : см. объявление "updateMenuItems"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(130,17): message : при попытке сопоставить список аргументов "(Button *[3], int, int *)"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(135,21): error C2664: "void Draw::drawMenu(MenuItem *[],int,sf::RenderWindow *)": невозможно преобразовать аргумент 3 из "int *" в "sf::RenderWindow *"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(135,45): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\Draw.h(14,7): message : см. объявление "Draw::drawMenu"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(135,21): message : при попытке сопоставить список аргументов "(MenuItem *[3], int, int *)"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(136,17): error C2664: "void updateMenuItems(Button *[],int,sf::RenderWindow *)": невозможно преобразовать аргумент 3 из "int *" в "sf::RenderWindow *"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(136,53): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(11,6): message : см. объявление "updateMenuItems"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(136,17): message : при попытке сопоставить список аргументов "(Button *[3], int, int *)"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(142,21): error C2664: "void Draw::drawPlayer(Player,sf::RenderWindow *)": невозможно преобразовать аргумент 2 из "int *" в "sf::RenderWindow *"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(142,41): message : Типы, на которые указывают указатели, не связаны; для преобразования требуется reinterpret_cast, приведение в стиле С или приведение в стиле функции в круглых скобках
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\Draw.h(11,7): message : см. объявление "Draw::drawPlayer"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\main.cpp(142,21): message : при попытке сопоставить список аргументов "(Player, int *)"
+  MenuItem.cpp
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(24,90): warning C4244: аргумент: преобразование "_Rep" в "unsigned int", возможна потеря данных
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(37,42): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(38,41): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(40,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(40,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(60,12): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(60,13): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,22): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "mode"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,22): error C3646: mode: неизвестный спецификатор переопределения
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,12): error C2079: "sf::RenderWindow::VideoMode" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,40): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,34): error C2079: "sf::RenderWindow::String" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,40): warning C4228: Нестандартное расширение: квалификаторы после запятой в списке операторов объявления пропускаются.
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,131): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,132): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,34): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "handle"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,34): error C3646: handle: неизвестный спецификатор переопределения
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,21): error C2079: "sf::RenderWindow::WindowHandle" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,40): error C2178: "sf::RenderWindow::WindowHandle" нельзя объявить с описателем "explicit"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,48): error C2079: "sf::RenderWindow::ContextSettings" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): error C2178: "sf::RenderWindow::ContextSettings" нельзя объявить с описателем "explicit"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): warning C4228: Нестандартное расширение: квалификаторы после запятой в списке операторов объявления пропускаются.
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,93): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,94): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(105,20): error C2523: sf::RenderWindow::~Window: несовпадение тегов деструктор
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,35): error C2327: sf::RenderWindow::VideoMode: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,53): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,53): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,35): error C2327: sf::RenderWindow::VideoMode: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,53): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,53): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,18): error C2535: void sf::RenderWindow::create(sf::VideoMode,const int): функция-член уже определена или объявлена
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,18): message : см. объявление "sf::RenderWindow::create"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(150,38): error C2327: sf::RenderWindow::WindowHandle: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,38): error C2327: sf::RenderWindow::WindowHandle: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,67): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,67): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(192,26): error C2327: sf::RenderWindow::ContextSettings: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Graphics\RenderWindow.hpp(44,38): error C2011: sf::RenderWindow: переопределение типа "class"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(49,23): message : см. объявление "sf::RenderWindow"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\MenuItem.cpp(25,42): error C2665: "sf::Mouse::getPosition": ни одна перегруженная функция не может преобразовать все типы аргументов
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Mouse.hpp(107,21): message : может быть "sf::Vector2i sf::Mouse::getPosition(const sf::WindowBase &)"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\MenuItem.cpp(25,42): message : "sf::Vector2i sf::Mouse::getPosition(const sf::WindowBase &)": невозможно преобразовать аргумент 1 из "sf::RenderWindow" в "const sf::WindowBase &"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\MenuItem.cpp(25,54): message : Причина: невозможно преобразовать "sf::RenderWindow" в "const sf::WindowBase"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\MenuItem.cpp(25,54): message : Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\MenuItem.cpp(25,42): message : при попытке сопоставить список аргументов "(sf::RenderWindow)"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\MenuItem.cpp(25,77): error C2665: "sf::Mouse::getPosition": ни одна перегруженная функция не может преобразовать все типы аргументов
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Mouse.hpp(107,21): message : может быть "sf::Vector2i sf::Mouse::getPosition(const sf::WindowBase &)"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\MenuItem.cpp(25,77): message : "sf::Vector2i sf::Mouse::getPosition(const sf::WindowBase &)": невозможно преобразовать аргумент 1 из "sf::RenderWindow" в "const sf::WindowBase &"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\MenuItem.cpp(25,89): message : Причина: невозможно преобразовать "sf::RenderWindow" в "const sf::WindowBase"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\MenuItem.cpp(25,89): message : Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\MenuItem.cpp(25,77): message : при попытке сопоставить список аргументов "(sf::RenderWindow)"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\MenuItem.cpp(26): error C2027: использование неопределенного типа "sf::RenderWindow"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(49,23): message : см. объявление "sf::RenderWindow"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\MenuItem.cpp(38,8): error C2027: использование неопределенного типа "sf::RenderWindow"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(49,23): message : см. объявление "sf::RenderWindow"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\MenuItem.cpp(39,8): error C2027: использование неопределенного типа "sf::RenderWindow"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(49,23): message : см. объявление "sf::RenderWindow"
+  Object.cpp
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(60,12): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(60,13): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,22): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "mode"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,22): error C3646: mode: неизвестный спецификатор переопределения
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,12): error C2079: "sf::RenderWindow::VideoMode" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,40): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,34): error C2079: "sf::RenderWindow::String" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,40): warning C4228: Нестандартное расширение: квалификаторы после запятой в списке операторов объявления пропускаются.
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,131): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,132): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,34): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "handle"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,34): error C3646: handle: неизвестный спецификатор переопределения
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,21): error C2079: "sf::RenderWindow::WindowHandle" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,40): error C2178: "sf::RenderWindow::WindowHandle" нельзя объявить с описателем "explicit"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,48): error C2079: "sf::RenderWindow::ContextSettings" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): error C2178: "sf::RenderWindow::ContextSettings" нельзя объявить с описателем "explicit"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): warning C4228: Нестандартное расширение: квалификаторы после запятой в списке операторов объявления пропускаются.
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,93): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,94): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(105,20): error C2523: sf::RenderWindow::~Window: несовпадение тегов деструктор
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,35): error C2327: sf::RenderWindow::VideoMode: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,53): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,53): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,35): error C2327: sf::RenderWindow::VideoMode: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,53): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,53): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,18): error C2535: void sf::RenderWindow::create(sf::VideoMode,const int): функция-член уже определена или объявлена
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,18): message : см. объявление "sf::RenderWindow::create"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(150,38): error C2327: sf::RenderWindow::WindowHandle: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,38): error C2327: sf::RenderWindow::WindowHandle: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,67): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,67): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(192,26): error C2327: sf::RenderWindow::ContextSettings: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Graphics\RenderWindow.hpp(44,38): error C2011: sf::RenderWindow: переопределение типа "class"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(49,23): message : см. объявление "sf::RenderWindow"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(24,90): warning C4244: аргумент: преобразование "_Rep" в "unsigned int", возможна потеря данных
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(37,42): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(38,41): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(40,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(40,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  ObjectsRain.cpp
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(60,12): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(60,13): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,22): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "mode"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,22): error C3646: mode: неизвестный спецификатор переопределения
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,12): error C2079: "sf::RenderWindow::VideoMode" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,40): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,34): error C2079: "sf::RenderWindow::String" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,40): warning C4228: Нестандартное расширение: квалификаторы после запятой в списке операторов объявления пропускаются.
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,131): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,132): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,34): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "handle"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,34): error C3646: handle: неизвестный спецификатор переопределения
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,21): error C2079: "sf::RenderWindow::WindowHandle" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,40): error C2178: "sf::RenderWindow::WindowHandle" нельзя объявить с описателем "explicit"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,48): error C2079: "sf::RenderWindow::ContextSettings" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): error C2178: "sf::RenderWindow::ContextSettings" нельзя объявить с описателем "explicit"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): warning C4228: Нестандартное расширение: квалификаторы после запятой в списке операторов объявления пропускаются.
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,93): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,94): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(105,20): error C2523: sf::RenderWindow::~Window: несовпадение тегов деструктор
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,35): error C2327: sf::RenderWindow::VideoMode: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,53): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,53): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,35): error C2327: sf::RenderWindow::VideoMode: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,53): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,53): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,18): error C2535: void sf::RenderWindow::create(sf::VideoMode,const int): функция-член уже определена или объявлена
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,18): message : см. объявление "sf::RenderWindow::create"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(150,38): error C2327: sf::RenderWindow::WindowHandle: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,38): error C2327: sf::RenderWindow::WindowHandle: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,67): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,67): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(192,26): error C2327: sf::RenderWindow::ContextSettings: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Graphics\RenderWindow.hpp(44,38): error C2011: sf::RenderWindow: переопределение типа "class"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(49,23): message : см. объявление "sf::RenderWindow"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(24,90): warning C4244: аргумент: преобразование "_Rep" в "unsigned int", возможна потеря данных
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(37,42): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(38,41): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(40,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(40,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(39,72): warning C4244: аргумент: преобразование "unsigned __int64" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(40,67): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(40,101): warning C4244: аргумент: преобразование "T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(42,30): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(52,56): warning C4244: аргумент: преобразование "const T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(51,83): warning C4244: аргумент: преобразование "const T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(55,40): warning C4244: аргумент: преобразование "const T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\ObjectsRain.cpp(54,67): warning C4244: аргумент: преобразование "const T" в "float", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+  Player.cpp
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(24,90): warning C4244: аргумент: преобразование "_Rep" в "unsigned int", возможна потеря данных
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(37,42): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(38,41): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(40,80): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\GitHub\Catch_them\Catch_them\Catch_them\setting.h(40,53): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(60,12): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(60,13): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,22): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "mode"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,22): error C3646: mode: неизвестный спецификатор переопределения
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,12): error C2079: "sf::RenderWindow::VideoMode" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,40): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,34): error C2079: "sf::RenderWindow::String" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,40): warning C4228: Нестандартное расширение: квалификаторы после запятой в списке операторов объявления пропускаются.
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,131): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(81,132): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,34): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "handle"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,34): error C3646: handle: неизвестный спецификатор переопределения
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,21): error C2079: "sf::RenderWindow::WindowHandle" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,40): error C2178: "sf::RenderWindow::WindowHandle" нельзя объявить с описателем "explicit"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): error C2143: синтаксическая ошибка: отсутствие ";" перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,48): error C2079: "sf::RenderWindow::ContextSettings" использует не имеющую определения структуру class "sf::Window"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): error C2178: "sf::RenderWindow::ContextSettings" нельзя объявить с описателем "explicit"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,63): warning C4228: Нестандартное расширение: квалификаторы после запятой в списке операторов объявления пропускаются.
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,93): error C2059: синтаксическая ошибка: )
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(97,94): error C2238: непредвиденные лексемы перед ";"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(105,20): error C2523: sf::RenderWindow::~Window: несовпадение тегов деструктор
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,35): error C2327: sf::RenderWindow::VideoMode: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,53): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,53): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,35): error C2327: sf::RenderWindow::VideoMode: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,53): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,53): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(138,18): error C2535: void sf::RenderWindow::create(sf::VideoMode,const int): функция-член уже определена или объявлена
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(119,18): message : см. объявление "sf::RenderWindow::create"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(150,38): error C2327: sf::RenderWindow::WindowHandle: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,38): error C2327: sf::RenderWindow::WindowHandle: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,67): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(167,67): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(192,26): error C2327: sf::RenderWindow::ContextSettings: не является именем типа, статическим членом или перечислителем
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Graphics\RenderWindow.hpp(44,38): error C2011: sf::RenderWindow: переопределение типа "class"
+C:\Users\Azat\Documents\libraries\SFML-2.6.1\include\SFML\Window\Window.hpp(49,23): message : см. объявление "sf::RenderWindow"
+  Создание кода...

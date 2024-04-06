@@ -14,9 +14,11 @@ void ObjectsRain::update(Player *player, float wasTime, instruments::window& s_w
 	for (int i = 0; i < objects.size(); i++) {
 		objects.at(i).move(objects.at(i).getSpeed() * wasTime);
 		if (objects.at(i).getSprite().getPosition().y - objects.at(i).getSprite().getTextureRect().height / 2 > setting::HEIGHT) {
-			auto iter = objects.cbegin();
-			objects.erase(iter+i);
-			addObject();
+			sf::Sprite sprite = objects.at(i).getSprite();
+			instruments::Pos objectPos(instruments::random(0, setting::WIDTH - sprite.getTextureRect().width), -sprite.getTextureRect().height);
+			objects.at(i).setPosition(objectPos);
+			objects.at(i).setSpeed(setting::SPEED_FALLING * (instruments::random(0, 100) / 100 + 0.5));
+
 			player->kick(1, s_window);
 		}
 		spawnLine(i, wasTime);
