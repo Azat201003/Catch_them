@@ -12,7 +12,7 @@ public:
 	sf::Sprite getSprite();
 	void addCoins(int num, instruments::window s_window);
 	int getCoins();
-	void kick(int damage, instruments::window s_window);
+	void kick(int damage, instruments::window &s_window);
 	int getHp();
 private:
 	instruments::Pos pos;

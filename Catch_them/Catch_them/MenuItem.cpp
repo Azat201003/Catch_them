@@ -42,7 +42,11 @@ Slider::Slider(sf::Texture* aTexture, sf::Texture* thumbTexture, instruments::Po
 	sprite.setTexture(*aTexture);
 	sprite.setPosition(texturePos.x, texturePos.y);
 	thumbSprite.setTexture(*thumbTexture);
-	thumbSprite.setPosition(texturePos.x + thumbPos * ((sprite.getTextureRect().width - thumbSprite.getTextureRect().width) / (range.y - range.x)), sprite.getPosition().y);
+	float posRange = sprite.getTextureRect().width - thumbSprite.getTextureRect().width;
+	float valueWidth = range.y - range.x;
+	float pixelsByValue = posRange / valueWidth;
+	float thumbPixelPos = texturePos.x + thumbPos * pixelsByValue;
+	thumbSprite.setPosition(thumbPixelPos, sprite.getPosition().y);
 	this->range = range;
 	this->thumbPos = thumbPos;
 }
@@ -65,13 +69,21 @@ void Slider::update(sf::RenderWindow* window) {
 	if (bounds.contains(mouseCoords.x, mouseCoords.y) && window->hasFocus()) {
 		onFocus(&sprite);
 		if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
-			thumbPos = (mouseCoords.x - sprite.getPosition().x) * (((sprite.getTextureRect().width - thumbSprite.getTextureRect().width) / (range.y - range.x) + range.x));
-			thumbSprite.setPosition(mouseCoords.x, sprite.getPosition().y);
-			onChange(thumbPos);
+			isChanging = true;
 		}
-		return;
+	} else { outFocus(&sprite); }
+	if (!sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
+		isChanging = false;
 	}
-	outFocus(&sprite);
+	if (isChanging) {
+		float posRange = sprite.getTextureRect().width - thumbSprite.getTextureRect().width;
+		float valueWidth = range.y - range.x;
+		float pixelsByValue = posRange / valueWidth;
+		thumbPos = std::max(range.x, std::min(range.y, (mouseCoords.x - sprite.getPosition().x) / pixelsByValue + range.x));
+		float thumbPixelPos = sprite.getPosition().x + thumbPos * pixelsByValue;
+		thumbSprite.setPosition(std::max(std::min(thumbPixelPos, posRange + sprite.getPosition().x), sprite.getPosition().x), sprite.getPosition().y);
+		onChange(thumbPos);
+	}
 }
 
 void Slider::draw(sf::RenderWindow* window) {

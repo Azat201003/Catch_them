@@ -95,7 +95,7 @@ int main()
     button2.setOutFocusFunction(outFocusMenuButton);
     button3.setOutFocusFunction(outFocusMenuButton);
 
-    Slider slider(&sliderBackgroundTexture, &thumbBackgroundTexture, instruments::Pos(145, 150), instruments::Pos(0, 100), volume);
+    Slider slider(&sliderBackgroundTexture, &thumbBackgroundTexture, instruments::Pos(72, 130), instruments::Pos(0, 100), volume);
 
     slider.setOnFocusFunction(onFocusSlider);
     slider.setOutFocusFunction(outFocusSlider);
@@ -148,6 +148,9 @@ int main()
             }
             else if (s_window == instruments::window::settings) {
                 draw.drawMenu(settingItems, 1, &window);
+                sf::Text volumeText("volume: " + std::to_string((int)(volume)) + "%", fontButtons, 50);
+                volumeText.setPosition(210, 40);
+                window.draw(volumeText);
                 updateMenuItems(settingItems, 1, &window);
                 if (numInFocusItems == 0)
                     window.setMouseCursor(defaultCursor);
@@ -184,7 +187,8 @@ void onFocusMenuButton(sf::Sprite* aSprite, sf::Text* aText) {
 }
 
 void onFocusSlider(sf::Sprite* aSprite) {
-
+    window.setMouseCursor(handCursor);
+    numInFocusItems += 1;
 }
 
 void outFocusSlider(sf::Sprite* aSprite) {

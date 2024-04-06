@@ -5,9 +5,13 @@ void Draw::drawPlayer(Player player, sf::RenderWindow* window) {
 	window->draw(player.getSprite());
 	sf::Font font;
 	font.loadFromFile("res/fonts/Robotocondensed.ttf");
-	sf::Text text(std::to_string(player.getCoins()), font, 20);
-	text.setPosition(setting::WIDTH - setting::LEN_COINS, 0);
-	window->draw(text);
+	sf::Text coinsText(std::to_string(player.getCoins()), font, 40);
+	coinsText.setPosition(setting::WIDTH - setting::LEN_COINS, 0);
+	window->draw(coinsText);
+	sf::Text hpText(std::to_string(player.getHp()), font, 40);
+	hpText.setPosition(setting::WIDTH - setting::LEN_HP, 0);
+	hpText.setFillColor(sf::Color(200, 10, 10));
+	window->draw(hpText);
 }
 
 void Draw::drawObjects(std::vector<Object> objects, sf::RenderWindow* window) {

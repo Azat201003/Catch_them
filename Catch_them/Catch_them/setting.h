@@ -37,5 +37,6 @@ namespace setting {
 	static float SPEED_FALLING		= 2 * 0.0001;
 	static float SPEED_PLAYER		= 5 * 0.0001;
 	static float LEN_COINS			= 100;
+	static float LEN_HP				= 250;
 	static instruments::Pos FIRST_PLAYER_POS(WIDTH / 2 - PLAYER_WIDTH / 2, HEIGHT - PLAYER_HEIGHT);
 }

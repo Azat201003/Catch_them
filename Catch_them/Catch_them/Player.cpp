@@ -42,7 +42,7 @@ int Player::getCoins() {
 	return coins;
 }
 
-void Player::kick(int damage, instruments::window s_window) {
+void Player::kick(int damage, instruments::window &s_window) {
 	if(s_window == instruments::window::game) {
 		hp -= damage;
 		if (hp <= 0) {

@@ -2,6 +2,7 @@
 #include "setting.h"
 #include <SFML/Graphics.hpp>
 #include <string>
+#include <algorithm>
 
 class MenuItem {
 public:
