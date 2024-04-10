@@ -1,4 +1,5 @@
 ﻿#include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 #include "Player.h"
 #include "Draw.h"
 #include "setting.h"
@@ -10,7 +11,8 @@ void quit();
 void openSetting();
 void onFocusSlider(sf::Sprite* aSprite);
 void outFocusSlider(sf::Sprite* aSprite);
-void outChangeVolumeSlider(float value);
+void onChangeVolumeSlider(float value);
+void onChangePitchSlider(float value);
 void updateMenuItems(MenuItem* menuObjects[], int size, sf::RenderWindow *window) {
     for (int i = 0; i < size; i++) {
         menuObjects[i]->update(window);
@@ -42,11 +44,15 @@ sf::Font fontButtons;
 sf::Cursor	defaultCursor;
 sf::Cursor	handCursor;
 
+sf::Music backMusic;
+sf::SoundBuffer pick;
+
 Player player;
 
 int numInFocusItems = 0;
 
 float volume = 50;
+float pitch = 1;
 
 int main()
 {
@@ -95,24 +101,36 @@ int main()
     button2.setOutFocusFunction(outFocusMenuButton);
     button3.setOutFocusFunction(outFocusMenuButton);
 
-    Slider slider(&sliderBackgroundTexture, &thumbBackgroundTexture, instruments::Pos(72, 130), instruments::Pos(0, 100), volume);
+    Slider sliderVolume(&sliderBackgroundTexture, &thumbBackgroundTexture, instruments::Pos(72, 130), instruments::Pos(0, 100), volume);
+    Slider sliderPitch(&sliderBackgroundTexture, &thumbBackgroundTexture, instruments::Pos(72, 365), instruments::Pos(0, 5), pitch);
 
-    slider.setOnFocusFunction(onFocusSlider);
-    slider.setOutFocusFunction(outFocusSlider);
-    slider.setOnChangeFunction(outChangeVolumeSlider);
+    sliderVolume.setOnFocusFunction(onFocusSlider);
+    sliderVolume.setOutFocusFunction(outFocusSlider);
+    sliderVolume.setOnChangeFunction(onChangeVolumeSlider);
+    sliderPitch.setOnFocusFunction(onFocusSlider);
+    sliderPitch.setOutFocusFunction(outFocusSlider);
+    sliderPitch.setOnChangeFunction(onChangePitchSlider);
+
+    backMusic.openFromFile("res/sounds/backMusic.mp3");
+    pick.loadFromFile("res/sounds/pick.wav");
+
+    backMusic.setLoop(true);
+    backMusic.play();
 
     player = Player(setting::FIRST_PLAYER_POS, playerSprite);
     Draw draw;
     ObjectsRain OR({spriteObject1});
 
     MenuItem* menuItems[] = { &button1, &button2, &button3 };
-    MenuItem* settingItems[] = { &slider };
+    MenuItem* settingItems[] = { &sliderVolume, &sliderPitch };
 
 
     window.setIcon(128, 128, icon.getPixelsPtr());
 
     sf::Clock startFrame;
     float wasTime;
+
+    OR.setSoundBuffer(pick);
 
     while (window.isOpen())
     {
@@ -128,8 +146,22 @@ int main()
                 if (event.type == sf::Event::Closed)
                     window.close();
                 else if (event.type == sf::Event::KeyReleased
-                      && event.key.scancode == sf::Keyboard::Scan::Escape)
-                    s_window = s_window == instruments::window::game ? instruments::window::menu : instruments::window::game;
+                    && event.key.scancode == sf::Keyboard::Scan::Escape) {
+                    switch (s_window)
+                    {
+                    case instruments::window::game:
+                        s_window = instruments::window::menu;
+                        break;
+                    case instruments::window::menu:
+                        s_window = instruments::window::game;
+                        break;
+                    case instruments::window::settings:
+                        s_window = instruments::window::menu;
+                        break;
+                    default:
+                        break;
+                    }
+                }
             }
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
             }
@@ -147,17 +179,23 @@ int main()
                     window.setMouseCursor(defaultCursor);
             }
             else if (s_window == instruments::window::settings) {
-                draw.drawMenu(settingItems, 1, &window);
+                draw.drawMenu(settingItems, 2, &window);
                 sf::Text volumeText("volume: " + std::to_string((int)(volume)) + "%", fontButtons, 50);
                 volumeText.setPosition(210, 40);
                 window.draw(volumeText);
-                updateMenuItems(settingItems, 1, &window);
+                sf::Text pitchText("pitch: " + std::to_string(pitch), fontButtons, 50);
+                pitchText.setPosition(210, 280);
+                window.draw(pitchText);
+                updateMenuItems(settingItems, 2, &window);
                 if (numInFocusItems == 0)
                     window.setMouseCursor(defaultCursor);
             }
             else {
                 window.setMouseCursor(defaultCursor);
                 draw.drawPlayer(player, &window);
+
+                setting::SPEED_FALLING += 0.01;
+                setting::SPEED_PLAYER += 0.7;
             }
             window.display();
         }
@@ -195,8 +233,13 @@ void outFocusSlider(sf::Sprite* aSprite) {
 
 }
 
-void outChangeVolumeSlider(float value) {
+void onChangeVolumeSlider(float value) {
     volume = value;
+    sf::Listener::setGlobalVolume(volume);
+}
+void onChangePitchSlider(float value) {
+    pitch = value;
+    backMusic.setPitch(pitch);
 }
 
 void outFocusMenuButton(sf::Sprite* aSprite, sf::Text* aText) {

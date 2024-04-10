@@ -61,10 +61,6 @@ void ObjectsRain::isCollisionPlayer(int indexObject, Player *player, instruments
 
 		if (objectCol.collisionDetect(playerCol)) {
 			player->addCoins(1, s_window);
-			sf::Sound sound;
-			sf::SoundBuffer soundBuffer;
-			sound.setBuffer(soundBuffer);
-			soundBuffer.loadFromFile("res/sounds/pick.wav");
 			sound.play();
 			auto iter = objects.cbegin();
 			objects.erase(iter + indexObject);
